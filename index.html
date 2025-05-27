@@ -47,7 +47,7 @@
             <h2 id="about-heading">About Me</h2>
             <div class="about-content">
                 <div class="about-image-wrapper">
-                    <img src="images/profile.jpg" alt="Gobinath Chithiravelu" class="profile-img" />
+                    <img src="https://placehold.co/180x180/007bff/ffffff?text=Profile" alt="Gobinath Chithiravelu" class="profile-img" />
                 </div>
                 <div class="about-text">
                     <div class="about-description">
@@ -193,14 +193,31 @@
                 </div>
 
                 <div class="gallery-area">
-                    <h3>My Visuals</h3>
-                    <p class="gallery-upload-text">Upload images or files to showcase your work or interests!</p>
-                    <input type="file" id="gallery-upload" multiple accept="image/*, .pdf, .doc, .docx" class="hidden-input">
-                    <label for="gallery-upload" class="upload-button">
-                        <i class="fas fa-cloud-upload-alt mr-2"></i> Upload Files
-                    </label>
+                    <h3>Visual Showcase</h3>
+                    <p class="gallery-description">Explore my visual work and supplementary files hosted on GitHub.</p>
                     <div id="gallery-preview" class="gallery-preview-grid">
+                        <a href="https://github.com/gobinath/portfolio-assets/blob/main/images/image1.png?raw=true" target="_blank" class="gallery-item" aria-label="View Image 1 on GitHub">
+                            <img src="https://placehold.co/120x80/eaf6fc/007bff?text=Project+1" alt="Project Image 1">
+                            <p class="file-name">Project-1.png</p>
+                        </a>
+                        <a href="https://github.com/gobinath/portfolio-assets/blob/main/documents/document.pdf?raw=true" target="_blank" class="gallery-item" aria-label="View Document on GitHub">
+                            <i class="fas fa-file-pdf file-icon"></i>
+                            <p class="file-name">Research.pdf</p>
+                        </a>
+                        <a href="https://github.com/gobinath/portfolio-assets/blob/main/images/image2.jpg?raw=true" target="_blank" class="gallery-item" aria-label="View Image 2 on GitHub">
+                            <img src="https://placehold.co/120x80/eaf6fc/007bff?text=Project+2" alt="Project Image 2">
+                            <p class="file-name">Project-2.jpg</p>
+                        </a>
+                        <a href="https://github.com/gobinath/portfolio-assets/blob/main/documents/report.docx?raw=true" target="_blank" class="gallery-item" aria-label="View Report on GitHub">
+                            <i class="fas fa-file-word file-icon"></i>
+                            <p class="file-name">Report.docx</p>
+                        </a>
                         </div>
+                    <div class="text-center mt-4">
+                        <a href="https://github.com/gobinath/portfolio-assets/tree/main/gallery" target="_blank" class="button-secondary">
+                            View Full Gallery on GitHub <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -316,47 +333,12 @@
             window.addEventListener('resize', highlightNavLink);
             highlightNavLink(); // Initial call on load
 
-            // Gallery Upload Functionality
-            const galleryUploadInput = document.getElementById('gallery-upload');
-            const galleryPreviewGrid = document.getElementById('gallery-preview');
-
-            galleryUploadInput.addEventListener('change', (event) => {
-                const files = event.target.files;
-                if (files.length === 0) return;
-
-                Array.from(files).forEach(file => {
-                    const reader = new FileReader();
-                    reader.onload = (e) => {
-                        const previewItem = document.createElement('div');
-                        previewItem.classList.add('gallery-item');
-
-                        const fileName = document.createElement('p');
-                        fileName.classList.add('file-name');
-                        fileName.textContent = file.name;
-
-                        if (file.type.startsWith('image/')) {
-                            const img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.alt = file.name;
-                            previewItem.appendChild(img);
-                        } else {
-                            // For non-image files, show a generic icon and file name
-                            const fileIcon = document.createElement('i');
-                            fileIcon.classList.add('fas', 'fa-file', 'file-icon'); // Generic file icon
-                            if (file.type.includes('pdf')) {
-                                fileIcon.classList.add('fa-file-pdf');
-                            } else if (file.type.includes('word') || file.type.includes('document')) {
-                                fileIcon.classList.add('fa-file-word');
-                            }
-                            previewItem.appendChild(fileIcon);
-                        }
-                        previewItem.appendChild(fileName);
-                        galleryPreviewGrid.appendChild(previewItem);
-                    };
-                    reader.readAsDataURL(file);
-                });
-            });
+            // Removed gallery upload functionality as per user request
+            // const galleryUploadInput = document.getElementById('gallery-upload');
+            // const galleryPreviewGrid = document.getElementById('gallery-preview');
+            // galleryUploadInput.addEventListener('change', (event) => { /* ... */ });
         });
     </script>
 </body>
 </html>
+
