@@ -1,6 +1,6 @@
 /*
  * Custom CSS for Gobinath Chithiravelu's Professional Minimalist Website
- * Theme inspired by the "Erika is Minimalist" design.
+ * Theme inspired by the provided image.
 */
 
 /* 1. Reset some default styles for consistency across browsers */
@@ -10,12 +10,12 @@
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-/* 2. Body styles - The core of the minimalistic background */
+/* 2. Body styles - The core of the minimalist background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
-    /* NEW: Very subtle, almost off-white light gray background, matching Erika image */
-    background-color: #f5f5f5;
-    color: #333333; /* Default dark gray text color */
+    /* NEW: Light beige background */
+    background-color: #f2f0ec;
+    color: #4a4a4a; /* Default dark gray text color */
     line-height: 1.6; /* Improved line spacing for readability */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
     display: flex;
@@ -70,12 +70,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #444444; /* Slightly darker gray on hover */
+    color: #333333; /* Slightly darker gray on hover */
     /* NEW: Removed background on hover */
     background-color: transparent;
 }
 
-/* 5. Container for main content - Now blends with the body, no "floating" effect */
+/* 5. Container for main content - Now blends with the body */
 .container {
     max-width: 900px; /* Maximum width of your content area */
     width: 95%; /* Responsive width */
@@ -92,7 +92,7 @@ nav a:hover {
 /* 6. Section styles */
 section {
     padding: 40px 0; /* Vertical padding for sections */
-    border-bottom: 1px solid #eeeeee; /* Light gray bottom border for separation */
+    border-bottom: 1px solid #e0ded9; /* Light beige bottom border for separation */
 }
 
 /* Remove border from the last section within the container */
@@ -105,7 +105,7 @@ h2 {
     margin-bottom: 20px;
     color: #333333; /* Darker text for headings */
     /* NEW: Dark gray left border for emphasis */
-    border-left: 4px solid #444444;
+    border-left: 4px solid #4a4a4a;
     padding-left: 10px;
     font-weight: 600;
 }
@@ -118,7 +118,7 @@ h2 {
     display: block; /* Ensures proper block behavior */
     object-fit: cover; /* Ensures image covers the area without distortion */
     /* NEW: Dark gray border around the image */
-    border: 2px solid #444444;
+    border: 2px solid #4a4a4a;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for the image */
     margin-bottom: 20px; /* Space below image in stacked layout */
 }
@@ -157,8 +157,8 @@ footer {
     color: #777777; /* Softer gray text for footer */
     font-size: 0.9rem; /* Smaller font size */
     /* NEW: Consistent background with body */
-    background-color: #f5f5f5;
-    border-top: 1px solid #eeeeee; /* Subtle top border for separation from content */
+    background-color: #f2f0ec;
+    border-top: 1px solid #e0ded9; /* Subtle top border for separation from content */
     width: 100%; /* Ensure footer spans full width */
     margin-top: auto; /* Pushes footer to the bottom if content is short */
     box-shadow: 0 -2px 5px rgba(0,0,0,0.03); /* Subtle shadow for separation */
