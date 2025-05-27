@@ -15,6 +15,7 @@
 /* 2. Body styles - The overall background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
+    /* Updated: Soft, light gray background with a subtle, cool gradient for depth */
     background: linear-gradient(135deg, #fbfcfd 0%, #f4f7f9 100%);
     color: #333333; /* Default dark gray text color for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
@@ -121,7 +122,7 @@ nav a.nav-link {
 }
 
 nav a.nav-link:hover {
-    color: #007bff;
+    color: #FFB6C1; /* Changed to light pink */
     background-color: transparent;
     transform: translateY(-2px); /* More pronounced lift */
 }
@@ -134,7 +135,7 @@ nav a.nav-link::after {
     height: 2px;
     bottom: -8px; /* Lower underline */
     left: 0;
-    background-color: #007bff;
+    background-color: #FFB6C1; /* Changed to light pink */
     transition: width 0.3s ease;
 }
 
@@ -144,13 +145,14 @@ nav a.nav-link.active::after {
 }
 
 nav a.nav-link.active {
-    color: #007bff;
+    color: #FFB6C1; /* Changed to light pink */
 }
 
 
 /* 5. Hero Section: Prominent introductory banner with a potential split layout */
 #hero-banner {
-    background: linear-gradient(135deg, #eaf6fc 0%, #d9edf7 100%);
+    /* Updated: Light pink gradient background */
+    background: linear-gradient(135deg, #fceae0 0%, #f7d9d9 100%);
     background-repeat: repeat;
     background-size: 100px 100px;
     padding: 120px 20px;
@@ -212,23 +214,24 @@ nav a.nav-link.active {
 }
 
 .hero-button {
+    /* Updated: Light pink button */
     display: inline-flex;
     align-items: center;
-    background-color: #007bff;
-    color: white;
+    background-color: #FFB6C1; /* Light pink */
+    color: #2c3e50; /* Dark text for contrast */
     padding: 16px 40px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+    box-shadow: 0 5px 15px rgba(255,182,193,0.3); /* Pink shadow */
 }
 
 .hero-button:hover {
-    background-color: #0056b3;
+    background-color: #FF99AA; /* Slightly darker pink on hover */
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0,123,255,0.5);
+    box-shadow: 0 10px 25px rgba(255,153,170,0.5); /* Darker pink shadow */
 }
 
 
@@ -273,7 +276,7 @@ section.fade-in.is-visible {
 h2 {
     margin-bottom: 30px;
     color: #2c3e50;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid #FFB6C1; /* Changed to light pink */
     padding-left: 20px;
     font-weight: 700;
     font-size: 2.2rem;
@@ -287,7 +290,7 @@ h2 {
     border-radius: 50%;
     display: block;
     object-fit: cover;
-    border: 4px solid #007bff;
+    border: 4px solid #FFB6C1; /* Changed to light pink */
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -366,9 +369,10 @@ h2 {
 }
 
 .card-link {
+    /* Updated: Light pink link */
     display: inline-flex;
     align-items: center;
-    color: #007bff;
+    color: #FFB6C1; /* Light pink */
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -376,7 +380,7 @@ h2 {
 }
 
 .card-link:hover {
-    color: #0056b3;
+    color: #FF99AA; /* Slightly darker pink on hover */
     transform: translateX(5px);
 }
 
@@ -451,10 +455,11 @@ h2 {
 }
 
 .publication-link {
+    /* Updated: Light pink button */
     display: inline-flex;
     align-items: center;
-    background-color: #007bff;
-    color: white;
+    background-color: #FFB6C1; /* Light pink */
+    color: #2c3e50; /* Dark text for contrast */
     padding: 10px 18px;
     border-radius: 5px;
     text-decoration: none;
@@ -465,7 +470,7 @@ h2 {
 }
 
 .publication-link:hover {
-    background-color: #0056b3;
+    background-color: #FF99AA; /* Slightly darker pink on hover */
     transform: translateY(-2px);
 }
 
@@ -474,7 +479,8 @@ h2 {
 #skills {
     position: relative;
     padding: 50px 0;
-    background: radial-gradient(circle at center, #d0e7f7 0%, #c0dcf0 70%, #f4f7f9 100%);
+    /* Updated: Light grey background for skills section */
+    background: radial-gradient(circle at center, #f0f0f0 0%, #e8e8e8 70%, #f4f7f9 100%);
     border-radius: 15px; /* Keep consistent with container */
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -492,7 +498,7 @@ h2 {
 
 #skills h2 {
     color: #2c3e50;
-    border-left-color: #007bff;
+    border-left-color: #FFB6C1; /* Changed to light pink */
     margin-bottom: 40px;
 }
 
@@ -529,7 +535,7 @@ h2 {
 }
 
 .skill-tag:hover {
-    background-color: #eaf6fc;
+    background-color: #fcfcfc; /* Slightly lighter on hover */
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
@@ -556,39 +562,39 @@ h2 {
 }
 
 /* Data-percentage based styling for the "measuring wheel" effect */
-/* Using #FFB6C1 for light pink */
+/* Using shades of pink for the percentages */
 .skill-tag[data-percentage="100"]::before {
-    background: conic-gradient(#FFB6C1 0%, #FFB6C1 100%, #e0e0e0 100%); /* Full pink circle */
-    color: #2c3e50; /* Dark text for better contrast on pink */
+    background: conic-gradient(#FF6680 0%, #FF6680 100%, #e0e0e0 100%); /* Strong Pink */
+    color: white; /* White text for better contrast on strong pink */
 }
 
 .skill-tag[data-percentage="95"]::before {
-    background: conic-gradient(#FFB6C1 0%, #FFB6C1 95%, #e0e0e0 95%); /* 95% pink fill */
+    background: conic-gradient(#FF99AA 0%, #FF99AA 95%, #e0e0e0 95%); /* Medium Pink */
     color: #2c3e50;
 }
 
 .skill-tag[data-percentage="90"]::before {
-    background: conic-gradient(#FFB6C1 0%, #FFB6C1 90%, #e0e0e0 90%); /* 90% pink fill */
+    background: conic-gradient(#FFB6C1 0%, #FFB6C1 90%, #e0e0e0 90%); /* Light Pink */
     color: #2c3e50;
 }
 
 .skill-tag[data-percentage="85"]::before {
-    background: conic-gradient(#FFB6C1 0%, #FFB6C1 85%, #e0e0e0 85%); /* 85% pink fill */
+    background: conic-gradient(#FFD1D9 0%, #FFD1D9 85%, #e0e0e0 85%); /* Lighter Pink */
     color: #2c3e50;
 }
 
 .skill-tag[data-percentage="80"]::before {
-    background: conic-gradient(#FFB6C1 0%, #FFB6C1 80%, #e0e0e0 80%); /* 80% pink fill */
+    background: conic-gradient(#FFE6EB 0%, #FFE6EB 80%, #e0e0e0 80%); /* Very Light Pink */
     color: #2c3e50;
 }
 
 .skill-tag[data-percentage="75"]::before {
-    background: conic-gradient(#FFB6C1 0%, #FFB6C1 75%, #e0e0e0 75%); /* 75% pink fill */
+    background: conic-gradient(#FFF0F3 0%, #FFF0F3 75%, #e0e0e0 75%); /* Almost White Pink */
     color: #2c3e50;
 }
 
 .skill-tag[data-percentage="70"]::before {
-    background: conic-gradient(#FFB6C1 0%, #FFB6C1 70%, #e0e0e0 70%); /* 70% pink fill */
+    background: conic-gradient(#F8F8F8 0%, #F8F8F8 70%, #e0e0e0 70%); /* Hint of Pink, mostly Grey */
     color: #2c3e50;
 }
 
@@ -626,9 +632,9 @@ h2 {
 }
 
 .timeline-dot {
+    background-color: #FFB6C1; /* Changed to light pink */
     width: 14px;
     height: 14px;
-    background-color: #007bff;
     border-radius: 50%;
     border: 2px solid white;
     position: absolute;
@@ -636,7 +642,7 @@ h2 {
     top: 25px;
     transform: translateX(-50%);
     z-index: 1;
-    box-shadow: 0 0 0 4px rgba(0,123,255,0.2);
+    box-shadow: 0 0 0 4px rgba(255,182,193,0.2); /* Pink shadow */
 }
 
 .timeline-content {
@@ -707,7 +713,7 @@ h2 {
 
 #interests-gallery h2 {
     color: #2c3e50;
-    border-left-color: #007bff;
+    border-left-color: #FFB6C1; /* Changed to light pink */
     margin-bottom: 30px;
     text-align: center;
     border-left: none;
@@ -718,7 +724,7 @@ h2 {
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #007bff;
+    background-color: #FFB6C1; /* Changed to light pink */
     margin: 15px auto 0 auto;
     border-radius: 2px;
 }
@@ -769,7 +775,7 @@ h2 {
 }
 
 .interest-item:hover {
-    background-color: #eaf6fc;
+    background-color: #fcfcfc; /* Slightly lighter on hover */
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -826,7 +832,7 @@ h2 {
 
 .gallery-item .file-icon {
     font-size: 3rem;
-    color: #007bff;
+    color: #FFB6C1; /* Changed to light pink */
     margin-bottom: 10px;
 }
 
@@ -872,7 +878,7 @@ h2 {
 }
 
 .contact-links p i {
-    color: #007bff;
+    color: #FFB6C1; /* Changed to light pink */
     font-size: 1.3rem;
     width: 30px;
     text-align: center;
@@ -880,7 +886,7 @@ h2 {
 }
 
 .contact-links p a {
-    color: #007bff;
+    color: #FFB6C1; /* Changed to light pink */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -888,13 +894,14 @@ h2 {
 }
 
 .contact-links p a:hover {
-    color: #0056b3;
+    color: #FF99AA; /* Slightly darker pink on hover */
     text-decoration: underline;
 }
 
 /* 17. Call to Action Section - Moved to be under contact */
 #cta {
-    background-color: #e9f5ff;
+    /* Updated: Light pink background for CTA */
+    background-color: #ffebee; /* Very light pink */
     color: #2c3e50;
     border-radius: 15px;
     margin-top: 60px;
@@ -910,7 +917,7 @@ h2 {
 
 #cta h2 {
     color: #2c3e50;
-    border-left-color: #007bff;
+    border-left-color: #FFB6C1; /* Changed to light pink */
     margin-bottom: 15px;
 }
 
@@ -925,16 +932,16 @@ h2 {
 }
 
 #cta .hero-button {
-    background-color: #007bff;
-    color: white;
-    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+    background-color: #FFB6C1; /* Light pink */
+    color: #2c3e50; /* Dark text for contrast */
+    box-shadow: 0 5px 15px rgba(255,182,193,0.3); /* Pink shadow */
 }
 
 #cta .hero-button:hover {
-    background-color: #0056b3;
-    color: white;
+    background-color: #FF99AA; /* Slightly darker pink on hover */
+    color: #2c3e50; /* Dark text for contrast */
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,123,255,0.3);
+    box-shadow: 0 8px 20px rgba(255,153,170,0.3); /* Darker pink shadow */
 }
 
 /* Horizontal layout for CTA on larger screens */
@@ -974,11 +981,12 @@ footer {
 
 /* 19. Back to Top Button */
 #backToTopBtn {
+    /* Updated: Light pink button */
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #007bff;
-    color: white;
+    background-color: #FFB6C1; /* Light pink */
+    color: #2c3e50; /* Dark text for contrast */
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -988,7 +996,7 @@ footer {
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+    box-shadow: 0 4px 12px rgba(255,182,193,0.4); /* Pink shadow */
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -1001,9 +1009,9 @@ footer {
 }
 
 #backToTopBtn:hover {
-    background-color: #0056b3;
+    background-color: #FF99AA; /* Slightly darker pink on hover */
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,123,255,0.5);
+    box-shadow: 0 6px 15px rgba(255,153,170,0.5); /* Darker pink shadow */
 }
 
 
@@ -1142,12 +1150,6 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 15px;
         padding: 0 10px;
-    }
-
-    .skill-tag {
-        padding: 10px 15px;
-        font-size: 0.9rem;
-        min-height: 100px;
     }
 
     .skill-tag::before {
