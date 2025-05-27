@@ -15,8 +15,8 @@
 /* 2. Body styles - The core of the minimalist background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
-    /* UPDATED: Solid, very soft light gray background as per previous request */
-    background-color: #f8f8f8;
+    /* UPDATED: Solid, very soft light gray background to match the Erika image more closely */
+    background-color: #f7f7f7;
     color: #222; /* Default dark gray text color for good contrast */
     line-height: 1.6; /* Improved line spacing for readability */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
@@ -153,7 +153,7 @@ footer {
     color: #777; /* Softer gray text for footer */
     font-size: 0.9rem; /* Smaller font size */
     /* UPDATED: Consistent solid light gray background for footer */
-    background-color: #f8f8f8;
+    background-color: #f7f7f7;
     border-top: 1px solid #ddd; /* Subtle top border for separation from content */
     width: 100%; /* Ensure footer spans full width */
     margin-top: auto; /* Pushes footer to the bottom if content is short */
@@ -216,4 +216,5 @@ footer {
         font-size: 1rem;
     }
 }
+
 
