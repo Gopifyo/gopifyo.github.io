@@ -151,40 +151,37 @@ nav a.nav-link.active {
 
 /* 5. Hero Section: Prominent introductory banner with a potential split layout */
 #hero-banner {
-    /* NEW: Dynamic background with subtle pattern or illustration */
     background: linear-gradient(135deg, #eaf6fc 0%, #d9edf7 100%);
-    /* Example for adding a subtle pattern: */
-    /* background-image: url('data:image/svg+xml,%3Csvg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23cce7f0" fill-opacity="0.4" fill-rule="evenodd"%3E%3Ccircle cx="3" cy="3" r="3"/%3E%3C/g%3E%3C/svg%3E'); */
     background-repeat: repeat;
-    background-size: 100px 100px; /* Adjust pattern size */
+    background-size: 100px 100px;
     padding: 120px 20px;
     text-align: center;
     color: #2c3e50;
-    box-shadow: inset 0 -5px 20px rgba(0,0,0,0.05); /* More pronounced inner shadow */
+    box-shadow: inset 0 -5px 20px rgba(0,0,0,0.05);
     position: relative;
     overflow: hidden;
-    display: flex; /* Use flex for hero content arrangement */
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero-content {
-    max-width: 1100px; /* Wider hero content area */
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    display: flex; /* Flexbox for hero content */
+    display: flex;
     align-items: center;
-    justify-content: space-between; /* Space out text and potential image */
-    flex-wrap: wrap; /* Allow wrapping */
-    gap: 40px; /* Space between hero text and visual area */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.hero-main-content { /* NEW: Wrapper for hero text and button */
-    flex: 1; /* Allow text area to grow */
-    min-width: 300px; /* Ensure it doesn't get too small */
-    text-align: left; /* Align text to left within its area */
-    animation: fadeInSlideRight 1s ease-out; /* Animation for text */
+.hero-main-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    animation: fadeInSlideRight 1s ease-out;
 }
 
 @keyframes fadeInSlideRight {
@@ -197,33 +194,6 @@ nav a.nav-link.active {
         transform: translateX(0);
     }
 }
-
-/* Optional: Hero Visual Area for split layout */
-.hero-visual-area {
-    flex-shrink: 0;
-    width: 400px; /* Fixed width for visual area */
-    height: 300px; /* Fixed height */
-    background-color: #cce7f0; /* Placeholder background */
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    animation: fadeInSlideLeft 1s ease-out; /* Animation for visual */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: #2c3e50;
-}
-/* @keyframes fadeInSlideLeft {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-} */
-
 
 .hero-title {
     font-size: 3.8rem;
@@ -265,7 +235,7 @@ nav a.nav-link.active {
 
 /* 6. Container for main content - The "floating card" effect */
 .container {
-    max-width: 1100px; /* Wider content area */
+    max-width: 1100px;
     width: 90%;
     margin: 60px auto;
     padding: 40px 50px;
@@ -339,19 +309,7 @@ h2 {
 
 .about-image-wrapper {
     flex-shrink: 0;
-    position: relative; /* For potential decorative elements */
-    /* Example: subtle ring around image */
-    /* &::before {
-        content: '';
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        right: -10px;
-        bottom: -10px;
-        border: 1px dashed #cce5ff;
-        border-radius: 50%;
-        z-index: -1;
-    } */
+    position: relative;
 }
 
 .about-text {
@@ -444,25 +402,25 @@ h2 {
 }
 
 
-/* 12. Publications List - NEW ARRANGEMENT */
+/* 12. Publications List */
 .publications-list {
     list-style-type: none;
     padding-left: 0;
     margin-top: 20px;
-    display: grid; /* Use grid for a more structured, multi-column layout */
-    grid-template-columns: 1fr; /* Default to single column */
-    gap: 25px; /* Space between publication cards */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
 }
 
 .publication-card {
-    display: flex; /* Flexbox for internal layout */
-    flex-direction: column; /* Stack details and link vertically by default */
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06); /* Softer shadow */
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e9ecef; /* Very light border */
+    border: 1px solid #e9ecef;
 }
 
 .publication-card:hover {
@@ -472,11 +430,11 @@ h2 {
 
 .publication-details {
     flex-grow: 1;
-    margin-bottom: 15px; /* Space between details and link */
+    margin-bottom: 15px;
 }
 
 .publication-title {
-    font-size: 1.2rem; /* Slightly larger title */
+    font-size: 1.2rem;
     font-weight: 600;
     color: #2c3e50;
     display: block;
@@ -484,7 +442,7 @@ h2 {
 }
 
 .publication-meta {
-    font-size: 0.9rem; /* Slightly smaller meta info */
+    font-size: 0.9rem;
     color: #666666;
     line-height: 1.5;
 }
@@ -513,102 +471,124 @@ h2 {
 }
 
 
-/* 13. Skills Grid - NEW ARRANGEMENT (Circle Measuring Wheel Concept) */
+/* 13. Skills & Expertise - Circle Measuring Wheel Concept */
 #skills {
     position: relative;
     padding: 50px 0;
-    /* NEW: Stronger radial gradient background for a more pronounced "circle" feel */
     background: radial-gradient(circle at center, #d0e7f7 0%, #c0dcf0 70%, #f4f7f9 100%);
-    border-radius: 50%; /* Make the entire section feel circular if possible, or large value */
-    /* Adjust border-radius for larger screens to truly hint at a circle */
-    border-radius: 50% / 100px; /* Oval shape, wider than tall, to fit content */
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-
-    overflow: hidden; /* Hide anything outside the rounded corners */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Subtle shadow */
-    margin-top: 60px; /* Space from previous section */
-    display: flex; /* Use flex to center content */
+    border-radius: 15px; /* Keep consistent with container */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-top: 60px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* Ensure content stays within the visual circular area on wider screens */
-    max-width: 900px; /* Constrain width to make border-radius more effective */
+    max-width: 900px; /* Constrain width to make background gradient more effective */
     margin-left: auto;
     margin-right: auto;
-}
-/* Ensure the padding applies within the rounded shape */
-#skills .container-inner { /* Create a new inner container for content */
-    padding: 50px 20px; /* Adjust as needed */
-    width: 100%;
+    padding-bottom: 50px;
 }
 
 #skills h2 {
-    color: #2c3e50; /* Dark blue-gray heading */
-    border-left-color: #007bff; /* Blue accent */
-    margin-bottom: 40px; /* More space below heading */
+    color: #2c3e50;
+    border-left-color: #007bff;
+    margin-bottom: 40px;
 }
 
 .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Slightly larger gap for more distinct tags */
-    justify-content: center; /* Center skills for a cleaner look */
-    max-width: 800px; /* Constrain width for better circular perception */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px; /* Add some bottom padding inside the skills section */
+    padding: 0 20px;
 }
 
 .skill-tag {
-    background-color: #ffffff; /* White background for tags */
-    color: #007bff;
-    padding: 12px 25px; /* Larger padding for a more substantial look */
-    border-radius: 25px; /* More rounded, pill-shaped */
-    font-size: 1.05rem; /* Slightly larger font */
-    font-weight: 500;
-    border: 1px solid #cce5ff;
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border: 1px solid #e0e6ed;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     cursor: default;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08); /* More prominent shadow */
-    position: relative; /* For the level indicator */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     display: flex;
+    flex-direction: column; /* Stack text and level indicator */
     align-items: center;
-    gap: 8px; /* Space between text and indicator */
+    justify-content: center;
+    text-align: center;
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
 }
 
 .skill-tag:hover {
-    background-color: #e0e6ed; /* Light gray on hover */
-    transform: translateY(-5px) rotate(2deg); /* Lift and slight rotation */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    background-color: #eaf6fc;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Level Indicator for skill tags (simulating a 'level') */
+/* Skill Level Indicator (Circle Measuring Wheel Concept) */
 .skill-tag::before {
-    content: '\f058'; /* Font Awesome check-circle icon as a placeholder */
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900; /* For solid icon */
-    color: #28a745; /* Green color, implying high level/proficiency */
-    font-size: 1rem;
-    line-height: 1;
-    margin-right: 5px; /* Space between icon and text */
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px; /* Larger circle */
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e0e0e0; /* Default background for the circle */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem; /* Larger font for percentage/icon */
+    font-weight: 700;
+    color: white;
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,0.1);
+    transition: background 0.3s ease; /* Smooth transition for background change */
 }
-/* You could define different pseudo-elements or classes for different levels
-   .skill-tag.level-expert::before { content: '\f058'; color: #28a745; }
-   .skill-tag.level-advanced::before { content: '\f111'; color: #007bff; } (filled circle)
-   .skill-tag.level-intermediate::before { content: '\f111'; color: #ffc107; } (half-filled circle, harder with CSS)
-*/
+
+/* Data-level based styling for the "measuring wheel" effect */
+.skill-tag[data-level="expert"]::before {
+    background: conic-gradient(#28a745 0%, #28a745 100%, #e0e0e0 100%); /* Full green circle */
+    content: '\f00c'; /* Checkmark icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+}
+
+.skill-tag[data-level="advanced"]::before {
+    background: conic-gradient(#007bff 0%, #007bff 80%, #e0e0e0 80%); /* 80% blue fill */
+    content: '80%'; /* Percentage text */
+    color: #2c3e50; /* Dark text for percentage */
+}
+
+.skill-tag[data-level="intermediate"]::before {
+    background: conic-gradient(#ffc107 0%, #ffc107 50%, #e0e0e0 50%); /* 50% yellow fill */
+    content: '50%'; /* Percentage text */
+    color: #2c3e50;
+}
+
+/* Text inside skill tag */
+.skill-tag span {
+    z-index: 2;
+    margin-top: 10px; /* Space from top edge/indicator */
+}
 
 
-/* 14. Experience Timeline - NEW ARRANGEMENT */
+/* 14. Experience Timeline */
 .experience-timeline {
     position: relative;
     padding: 20px 0;
     margin-top: 20px;
-    /* NEW: Vertical line for the timeline */
     &::before {
         content: '';
         position: absolute;
@@ -624,7 +604,7 @@ h2 {
 
 .timeline-item {
     display: flex;
-    justify-content: center; /* Center items for a single column timeline */
+    justify-content: center;
     align-items: flex-start;
     padding: 20px 0;
     position: relative;
@@ -633,15 +613,15 @@ h2 {
 .timeline-dot {
     width: 14px;
     height: 14px;
-    background-color: #007bff; /* Blue dot */
+    background-color: #007bff;
     border-radius: 50%;
-    border: 2px solid white; /* White border to stand out from line */
+    border: 2px solid white;
     position: absolute;
     left: 50%;
-    top: 25px; /* Adjust vertical position */
+    top: 25px;
     transform: translateX(-50%);
     z-index: 1;
-    box-shadow: 0 0 0 4px rgba(0,123,255,0.2); /* Subtle glow */
+    box-shadow: 0 0 0 4px rgba(0,123,255,0.2);
 }
 
 .timeline-content {
@@ -651,19 +631,18 @@ h2 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #f0f0f0;
-    width: calc(50% - 40px); /* Adjust width to leave space for line/dot */
-    margin: 0 20px; /* Space from center line */
+    width: calc(50% - 40px);
+    margin: 0 20px;
     position: relative;
-    animation: fadeIn 0.8s ease-out; /* Fade in animation */
+    animation: fadeIn 0.8s ease-out;
 }
 
-/* Alternate content left/right for timeline */
 .timeline-item:nth-child(even) .timeline-content {
-    margin-left: calc(50% + 20px); /* Move even items to the right */
+    margin-left: calc(50% + 20px);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-right: calc(50% + 20px); /* Move odd items to the left */
+    margin-right: calc(50% + 20px);
 }
 
 .timeline-content:hover {
@@ -699,64 +678,169 @@ h2 {
     line-height: 1.6;
 }
 
-/* 15. Interests Grid - NEW ARRANGEMENT (Horizontal with objects blend rectangular) */
-#interests {
-    /* Background for the section itself */
-    background-color: #f7f9fb; /* Very light, blending background */
-    border-radius: 15px; /* Match container border-radius */
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* Soft shadow */
-    padding: 50px; /* Adjust padding for the section */
-    margin-top: 60px; /* Space from previous section */
+/* 15. Combined Interests and Gallery Section - NEW ARRANGEMENT */
+#interests-gallery {
+    padding: 50px;
+    background-color: #f7f9fb;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-#interests h2 {
+#interests-gallery h2 {
     color: #2c3e50;
     border-left-color: #007bff;
     margin-bottom: 30px;
-    text-align: center; /* Center the heading for this section */
-    border-left: none; /* Remove left border */
-    padding-left: 0; /* Remove padding */
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
 }
-/* Re-add a decorative element if desired, e.g., an underline: */
-#interests h2::after {
+#interests-gallery h2::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 80px;
     height: 3px;
     background-color: #007bff;
-    margin: 15px auto 0 auto; /* Centered underline */
+    margin: 15px auto 0 auto;
     border-radius: 2px;
 }
 
+.interests-gallery-content {
+    display: flex;
+    flex-direction: column; /* Default to stacking */
+    gap: 40px;
+}
+
+.interests-area, .gallery-area {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border: 1px solid #e0e6ed;
+}
+
+.interests-area h3, .gallery-area h3 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .interests-grid {
-    display: flex; /* Use flexbox for horizontal arrangement */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 15px; /* Space between items */
-    justify-content: center; /* Center items horizontally */
+    display: flex; /* Horizontal arrangement for interests */
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .interest-item {
-    background-color: #ffffff; /* White background for items */
-    padding: 15px 25px; /* Generous padding */
-    border-radius: 10px; /* Rounded corners for rectangular objects */
+    background-color: #f8f8f8;
+    padding: 15px 25px;
+    border-radius: 10px; /* Rectangular objects with rounded corners */
     font-size: 1.05rem;
     color: #4a4a4a;
     font-weight: 500;
-    border: 1px solid #e0e6ed; /* Soft, blending border */
+    border: 1px solid #e0e6ed;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 50px; /* Consistent height for items */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow for "blending" */
+    min-height: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .interest-item:hover {
-    background-color: #eaf6fc; /* Light blue on hover for blending effect */
-    transform: translateY(-3px); /* Gentle lift */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* More pronounced shadow on hover */
+    background-color: #eaf6fc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Gallery Specific Styles */
+.gallery-upload-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.hidden-input {
+    display: none;
+}
+
+.upload-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.gallery-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    border-top: 1px dashed #e0e0e0;
+    padding-top: 20px;
+}
+
+.gallery-item {
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.gallery-item .file-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.gallery-item .file-name {
+    font-size: 0.8rem;
+    color: #555;
+    word-break: break-all;
+    padding: 0 5px;
+}
+
+/* Horizontal layout for Interests & Gallery on larger screens */
+@media (min-width: 769px) {
+    .interests-gallery-content {
+        flex-direction: row;
+    }
 }
 
 
@@ -807,42 +891,40 @@ h2 {
     text-decoration: underline;
 }
 
-/* 17. Call to Action Section - NEW ARRANGEMENT (Moved to be under contact) */
+/* 17. Call to Action Section - Moved to be under contact */
 #cta {
-    /* Reusing previous blending background, rectangular, horizontal layout */
-    background-color: #e9f5ff; /* A very light blue that blends */
-    color: #2c3e50; /* Dark text */
-    border-radius: 15px; /* Rounded corners */
-    margin-top: 60px; /* Space from previous section (Contact) */
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Softer shadow */
-    padding: 40px 30px; /* Adjusted padding */
-
-    display: flex; /* Use flexbox for horizontal arrangement */
-    flex-direction: column; /* Default to column on small screens */
-    align-items: center; /* Center items vertically */
+    background-color: #e9f5ff;
+    color: #2c3e50;
+    border-radius: 15px;
+    margin-top: 60px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom: none; /* Ensure no border-bottom as it's typically the last section */
+    border-bottom: none;
 }
 
 #cta h2 {
-    color: #2c3e50; /* Dark blue-gray heading */
-    border-left-color: #007bff; /* Blue accent */
-    margin-bottom: 15px; /* Less space below heading */
+    color: #2c3e50;
+    border-left-color: #007bff;
+    margin-bottom: 15px;
 }
 
 #cta .cta-text {
-    font-size: 1.1rem; /* Slightly smaller text */
-    margin-bottom: 30px; /* Less space */
+    font-size: 1.1rem;
+    margin-bottom: 30px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    color: #4a4a4a; /* Softer text color */
+    color: #4a4a4a;
 }
 
-#cta .hero-button { /* Reusing hero button style but with adjusted colors */
-    background-color: #007bff; /* Blue button */
+#cta .hero-button {
+    background-color: #007bff;
     color: white;
     box-shadow: 0 5px 15px rgba(0,123,255,0.3);
 }
@@ -857,21 +939,21 @@ h2 {
 /* Horizontal layout for CTA on larger screens */
 @media (min-width: 769px) {
     #cta {
-        flex-direction: row; /* Arrange horizontally */
-        justify-content: space-between; /* Space out content */
-        align-items: center; /* Vertically align */
-        padding: 40px 60px; /* More horizontal padding */
-        text-align: left; /* Align text to left */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 60px;
+        text-align: left;
     }
     #cta h2 {
-        margin-bottom: 0; /* No bottom margin when horizontal */
-        margin-right: 30px; /* Space from text */
-        flex-shrink: 0; /* Prevent heading from shrinking */
+        margin-bottom: 0;
+        margin-right: 30px;
+        flex-shrink: 0;
     }
     #cta .cta-text {
-        margin-bottom: 0; /* No bottom margin when horizontal */
-        margin-right: 30px; /* Space from button */
-        flex-grow: 1; /* Allow text to grow */
+        margin-bottom: 0;
+        margin-right: 30px;
+        flex-grow: 1;
     }
 }
 
@@ -907,7 +989,7 @@ footer {
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,123,255,0.4);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     transform: translateY(20px);
     z-index: 1000;
 }
@@ -973,19 +1055,13 @@ footer {
     }
 
     .hero-content {
-        flex-direction: column; /* Stack hero content vertically */
+        flex-direction: column;
         text-align: center;
     }
 
     .hero-main-content {
-        text-align: center; /* Center text area on mobile */
+        text-align: center;
     }
-
-    /* .hero-visual-area {
-        width: 100%;
-        height: 250px;
-        margin-top: 30px;
-    } */
 
     .hero-title {
         font-size: 2.5rem;
@@ -1028,7 +1104,7 @@ footer {
     }
 
     .about-text .about-description p {
-        text-align: left; /* Keep text left-aligned within its block */
+        text-align: left;
     }
 
     .project-grid {
@@ -1036,7 +1112,7 @@ footer {
     }
 
     .publications-list {
-        grid-template-columns: 1fr; /* Single column for publications on mobile */
+        grid-template-columns: 1fr;
     }
 
     .publication-card {
@@ -1051,57 +1127,68 @@ footer {
     }
 
     .publication-link {
-        width: 100%; /* Full width button on mobile */
+        width: 100%;
         justify-content: center;
     }
 
     #skills {
-        padding: 30px 0; /* Adjust padding for mobile */
-        border-radius: 30px; /* Simpler rounded corners on mobile */
-        max-width: 100%; /* Allow full width */
+        padding: 30px 0;
+        border-radius: 30px;
+        max-width: 100%;
     }
 
     .skills-grid {
-        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+        padding: 0 10px;
     }
 
     .skill-tag {
-        padding: 6px 15px;
+        padding: 10px 15px;
         font-size: 0.9rem;
+        min-height: 100px;
+    }
+
+    .skill-tag::before {
+        top: 8px;
+        right: 8px;
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
     }
 
     .experience-timeline {
-        padding: 0; /* Remove horizontal padding */
+        padding: 0;
     }
 
     .experience-timeline::before {
-        left: 20px; /* Adjust line position for mobile */
+        left: 20px;
         transform: translateX(0);
     }
 
     .timeline-item {
-        justify-content: flex-start; /* Align items to left */
+        justify-content: flex-start;
         padding: 15px 0;
     }
 
     .timeline-dot {
-        left: 20px; /* Align dot with line */
+        left: 20px;
         top: 20px;
         transform: translateX(-50%);
     }
 
     .timeline-content {
-        width: calc(100% - 60px); /* Take up more width */
-        margin-left: 60px; /* Space from line/dot */
+        width: calc(100% - 60px);
+        margin-left: 60px;
         margin-right: 0;
     }
 
     .timeline-item:nth-child(even) .timeline-content {
-        margin-left: 60px; /* Ensure both sides align to left */
+        margin-left: 60px;
     }
 
     .timeline-item:nth-child(odd) .timeline-content {
-        margin-right: 0; /* Remove right margin */
+        margin-right: 0;
     }
 
     .experience-header {
@@ -1115,19 +1202,40 @@ footer {
         margin-top: 5px;
     }
 
-    #interests {
-        padding: 30px; /* Adjust padding for mobile */
+    #interests-gallery {
+        padding: 30px;
     }
-    #interests h2 {
-        text-align: left; /* Align heading left again on mobile */
-        margin-bottom: 20px;
+
+    .interests-gallery-content {
+        flex-direction: column;
+        gap: 30px;
     }
-    #interests h2::after {
-        margin: 10px 0 0 0; /* Align underline left */
+
+    .interests-area h3, .gallery-area h3 {
+        font-size: 1.4rem;
     }
 
     .interests-grid {
-        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+
+    .interest-item {
+        padding: 12px 18px;
+        font-size: 0.95rem;
+    }
+
+    .gallery-preview-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .gallery-item {
+        height: 120px;
+    }
+
+    .gallery-item .file-icon {
+        font-size: 2.5rem;
     }
 
     .contact-links {
@@ -1198,7 +1306,7 @@ footer {
         font-size: 0.8rem;
     }
     .experience-list li, .interests-list li, .contact-links p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     #backToTopBtn {
         width: 35px;
@@ -1208,4 +1316,3 @@ footer {
         right: 15px;
     }
 }
-
