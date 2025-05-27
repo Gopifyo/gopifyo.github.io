@@ -6,12 +6,15 @@
     <title>Gobinath Chithiravelu | Bioengineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Gobinath Chithiravelu</h1>
-            <p>Bioengineer & Entrepreneur | Passionate about Personalized Medicine and Sustainable Biomanufacturing</p>
+            <div class="site-branding">
+                <h1>Gobinath Chithiravelu</h1>
+                <p class="tagline">Bioengineer & Entrepreneur</p>
+            </div>
             <nav>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -23,41 +26,94 @@
         </div>
     </header>
 
+    <section id="hero-banner">
+        <div class="hero-content">
+            <h2 class="hero-title">Innovating at the Intersection of Biology and Engineering</h2>
+            <p class="hero-subtitle">Passionate about Personalized Medicine and Sustainable Biomanufacturing.</p>
+            <a href="#projects" class="hero-button">
+                Explore My Work <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+                <p>Scroll</p>
+            </div>
+        </div>
+    </section>
+
     <div class="container">
         <section id="about">
-            <h2>About</h2>
-            <img src="images/profile.jpg" alt="Gobinath Chithiravelu" class="profile-img" />
-            <p>
-                Joint PhD student in Bioengineering at Oregon State University & University of Oregon. Committed to innovation in tissue engineering, cultivated meat, and regenerative medicine.
-            </p>
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Gobinath Chithiravelu" class="profile-img" />
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Gobinath, a Joint PhD student in Bioengineering at Oregon State University & University of Oregon. My research focuses on cutting-edge innovations in tissue engineering, cultivated meat, and regenerative medicine. I am committed to leveraging engineering principles to solve complex biological challenges and drive sustainable solutions in healthcare and biotechnology.
+                    </p>
+                    <p>
+                        My work spans various disciplines, from developing novel biomaterials to designing advanced microfluidic systems for personalized therapies. I thrive on interdisciplinary collaboration and am always eager to explore new frontiers in bioengineering. I believe in the power of science to create a better future.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>Decellularized Seaweed Scaffold for Lab-Grown Meat</li>
-                <li>Organoid-on-Chip for Personalized Cancer Therapy</li>
-                <li>Drug-Loaded Zein Nanocomposites for Chemotherapy</li>
-            </ul>
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Decellularized Seaweed Scaffold for Lab-Grown Meat</h3>
+                    <p>Developing sustainable and scalable scaffolds for cellular agriculture, aiming to revolutionize food production with innovative biomaterials.</p>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3>Organoid-on-Chip for Personalized Cancer Therapy</h3>
+                    <p>Creating advanced microfluidic platforms to mimic human organ functions for precision drug testing and disease modeling.</p>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3>Drug-Loaded Zein Nanocomposites for Chemotherapy</h3>
+                    <p>Designing sophisticated drug delivery systems using biodegradable polymers for targeted and efficient cancer treatment.</p>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+            </div>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
-            <p>3D Bioprinting, Genetic Modification, Hydrogel Design, Microfluidics, ImageJ, MATLAB, Python, SolidWorks</p>
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">3D Bioprinting</span>
+                <span class="skill-tag">Genetic Modification</span>
+                <span class="skill-tag">Hydrogel Design</span>
+                <span class="skill-tag">Microfluidics</span>
+                <span class="skill-tag">ImageJ</span>
+                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SolidWorks</span>
+                <span class="skill-tag">Biomaterials</span>
+                <span class="skill-tag">Cell Culture</span>
+            </div>
         </section>
 
         <section id="experience">
             <h2>Experience</h2>
-            <ul>
-                <li><strong>PhD Research Associate</strong>, Oregon State University (2024–Present)</li>
-                <li><strong>Research Associate</strong>, University of Texas El Paso (2024)</li>
-                <li><strong>Researcher</strong>, ISMO Biophotonics (2022–2023)</li>
+            <ul class="experience-list">
+                <li>
+                    <span class="experience-role"><strong>PhD Research Associate</strong></span>, Oregon State University (2024–Present)
+                    <p class="experience-description">Conducting cutting-edge research in tissue engineering and regenerative medicine, focusing on novel scaffold development.</p>
+                </li>
+                <li>
+                    <span class="experience-role"><strong>Research Associate</strong></span>, University of Texas El Paso (2024)
+                    <p class="experience-description">Contributed to projects involving advanced material characterization and bio-device prototyping.</p>
+                </li>
+                <li>
+                    <span class="experience-role"><strong>Researcher</strong></span>, ISMO Biophotonics (2022–2023)
+                    <p class="experience-description">Engaged in optical sensing and imaging techniques for biological applications.</p>
+                </li>
             </ul>
         </section>
 
         <section id="interests">
             <h2>Interests</h2>
-            <ul>
+            <ul class="interests-list">
                 <li>Tissue Engineering</li>
                 <li>Regenerative Medicine</li>
                 <li>Cultivated Meat</li>
@@ -70,15 +126,18 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:gobinath@example.com">gobinath@example.com</a></p>
-            <p><a href="https://www.linkedin.com/in/gobi-nath" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            <p><a href="https://github.com/gobinath" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            <p>Feel free to connect with me through the following channels:</p>
+            <div class="contact-links">
+                <p><i class="fas fa-envelope mr-2"></i> Email: <a href="mailto:gobinath@example.com">gobinath@example.com</a></p>
+                <p><i class="fab fa-linkedin mr-2"></i> <a href="https://www.linkedin.com/in/gobi-nath" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+                <p><i class="fab fa-github mr-2"></i> <a href="https://github.com/gobinath" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
+            </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Gobinath Chithiravelu</p>
+        <p>&copy; 2025 Gobinath Chithiravelu. All rights reserved.</p>
     </footer>
 
-    </body>
+</body>
 </html>
