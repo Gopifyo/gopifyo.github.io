@@ -15,9 +15,9 @@
 /* 2. Body styles - The overall background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
-    /* Updated: Soft, light gray background with a subtle, cool gradient for depth */
-    background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%); /* Lighter grey background */
-    color: #333333; /* Default dark gray text color for readability */
+    /* Updated: Dry black background */
+    background: #1a1a1a; /* Very dark grey, almost black */
+    color: #cccccc; /* Light grey text for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
     display: flex;
@@ -32,30 +32,30 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #e9ecef; /* Light gray track */
+    background: #282828; /* Darker grey track */
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #adb5bd; /* Medium gray thumb */
+    background: #424242; /* Medium dark grey thumb */
     border-radius: 10px;
     transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #6c757d; /* Darker gray on hover */
+    background: #607d8b; /* Muted blue-grey on hover */
 }
 
 
 /* 3. Header styles - Clean, subtle top bar */
 header {
-    background-color: #ffffff;
-    color: #555555;
+    background-color: #222222; /* Darker grey for header */
+    color: #cccccc;
     padding: 20px 0; /* Slightly less padding for a sleeker bar */
     text-align: center;
     width: 100%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* More noticeable but soft shadow */
-    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* More noticeable but soft shadow */
+    border-bottom: 1px solid #333333;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -65,7 +65,7 @@ header {
 /* Header shrinks/changes on scroll (requires JS to add 'scrolled' class to body) */
 body.scrolled header {
     padding: 12px 0; /* Even smaller padding on scroll */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* More prominent shadow on scroll */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* More prominent shadow on scroll */
 }
 
 header .header-content {
@@ -89,7 +89,7 @@ header h1 {
     font-size: 1.8rem;
     margin: 0;
     font-weight: 700;
-    color: #2c3e50; /* Dark blue-gray for main title */
+    color: #f0f0f0; /* Off-white for main title */
     letter-spacing: -0.02em;
 }
 
@@ -97,7 +97,7 @@ header p.tagline {
     font-size: 0.9rem; /* Slightly smaller tagline */
     font-weight: 400;
     margin: 0;
-    color: #777777;
+    color: #999999; /* Softer grey for tagline */
     margin-left: 15px;
     display: inline-block;
 }
@@ -112,7 +112,7 @@ nav {
 }
 
 nav a.nav-link {
-    color: #555555;
+    color: #cccccc; /* Light grey for links */
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
@@ -122,7 +122,7 @@ nav a.nav-link {
 }
 
 nav a.nav-link:hover {
-    color: #FF69B4; /* Hot Pink */
+    color: #607d8b; /* Muted blue-grey on hover */
     background-color: transparent;
     transform: translateY(-2px); /* More pronounced lift */
 }
@@ -135,7 +135,7 @@ nav a.nav-link::after {
     height: 2px;
     bottom: -8px; /* Lower underline */
     left: 0;
-    background-color: #FF69B4; /* Hot Pink */
+    background-color: #607d8b; /* Muted blue-grey */
     transition: width 0.3s ease;
 }
 
@@ -145,20 +145,20 @@ nav a.nav-link.active::after {
 }
 
 nav a.nav-link.active {
-    color: #FF69B4; /* Hot Pink */
+    color: #607d8b; /* Muted blue-grey */
 }
 
 
 /* 5. Hero Section: Prominent introductory banner with a potential split layout */
 #hero-banner {
-    /* Updated: Light pink gradient background */
-    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); /* Softer pink gradient */
+    /* Updated: Darker, desaturated background */
+    background: linear-gradient(135deg, #282828 0%, #333333 100%);
     background-repeat: repeat;
     background-size: 100px 100px;
     padding: 120px 20px;
     text-align: center;
-    color: #2c3e50;
-    box-shadow: inset 0 -5px 20px rgba(0,0,0,0.05);
+    color: #f0f0f0;
+    box-shadow: inset 0 -5px 20px rgba(0,0,0,0.1);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -202,36 +202,36 @@ nav a.nav-link.active {
     margin-bottom: 25px;
     line-height: 1.2;
     letter-spacing: -0.04em;
-    color: #2c3e50;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.08);
+    color: #f0f0f0; /* Off-white */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
 }
 
 .hero-subtitle {
     font-size: 1.6rem;
     font-weight: 300;
     margin-bottom: 50px;
-    color: #4a6980;
+    color: #bbbbbb; /* Lighter grey */
 }
 
 .hero-button {
-    /* Updated: Pink button */
+    /* Updated: Muted blue-grey button */
     display: inline-flex;
     align-items: center;
-    background-color: #FF69B4; /* Hot Pink */
-    color: #2c3e50; /* Dark text for contrast */
+    background-color: #607d8b; /* Muted blue-grey */
+    color: #f0f0f0; /* Off-white text for contrast */
     padding: 16px 40px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255,105,180,0.3); /* Pink shadow */
+    box-shadow: 0 5px 15px rgba(96,125,139,0.3); /* Muted blue-grey shadow */
 }
 
 .hero-button:hover {
-    background-color: #FF1493; /* Deeper pink on hover */
+    background-color: #78909c; /* Slightly lighter muted blue-grey on hover */
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(255,20,147,0.5); /* Darker pink shadow */
+    box-shadow: 0 10px 25px rgba(120,144,156,0.5); /* Darker shadow */
 }
 
 
@@ -241,8 +241,8 @@ nav a.nav-link.active {
     width: 90%;
     margin: 60px auto;
     padding: 40px 50px;
-    background-color: #ffffff;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    background-color: #282828; /* Slightly lighter dark grey for container */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     box-sizing: border-box;
     flex-grow: 1;
@@ -251,7 +251,7 @@ nav a.nav-link.active {
 /* 7. Section styles */
 section {
     padding: 50px 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #333333; /* Darker border for separation */
 }
 
 /* Remove border from the last section within the container */
@@ -275,8 +275,8 @@ section.fade-in.is-visible {
 /* 8. Section heading styles */
 h2 {
     margin-bottom: 30px;
-    color: #2c3e50;
-    border-left: 5px solid #FF69B4; /* Hot Pink */
+    color: #f0f0f0; /* Off-white for headings */
+    border-left: 5px solid #607d8b; /* Muted blue-grey */
     padding-left: 20px;
     font-weight: 700;
     font-size: 2.2rem;
@@ -290,15 +290,15 @@ h2 {
     border-radius: 50%;
     display: block;
     object-fit: cover;
-    border: 4px solid #FF69B4; /* Hot Pink */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    border: 4px solid #607d8b; /* Muted blue-grey */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 /* 10. About section: flex layout for image and text side-by-side */
@@ -321,7 +321,7 @@ h2 {
 .about-text .about-description p {
     font-size: 1.15rem;
     line-height: 1.7;
-    color: #4a4a4a;
+    color: #cccccc; /* Light grey */
     margin-bottom: 1.2em;
 }
 
@@ -338,41 +338,41 @@ h2 {
 }
 
 .project-card {
-    background-color: #fcfcfc;
+    background-color: #333333; /* Darker grey for cards */
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #444444;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
 .project-card h3 {
     font-size: 1.4rem;
-    color: #2c3e50;
+    color: #f0f0f0; /* Off-white */
     margin-bottom: 10px;
     font-weight: 600;
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #666666;
+    color: #bbbbbb; /* Lighter grey */
     line-height: 1.6;
     flex-grow: 1;
     margin-bottom: 20px;
 }
 
 .card-link {
-    /* Updated: Pink link */
+    /* Updated: Muted blue-grey link */
     display: inline-flex;
     align-items: center;
-    color: #FF69B4; /* Hot Pink */
+    color: #607d8b; /* Muted blue-grey */
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -380,28 +380,28 @@ h2 {
 }
 
 .card-link:hover {
-    color: #FF1493; /* Deeper pink on hover */
+    color: #78909c; /* Slightly lighter muted blue-grey on hover */
     transform: translateX(5px);
 }
 
 .button-secondary {
     display: inline-flex;
     align-items: center;
-    background-color: #e0e6ed;
-    color: #2c3e50;
+    background-color: #424242; /* Dark grey */
+    color: #f0f0f0; /* Off-white */
     padding: 12px 25px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #555555;
 }
 
 .button-secondary:hover {
-    background-color: #d0d6dd;
+    background-color: #555555;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 
@@ -418,17 +418,17 @@ h2 {
 .publication-card {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #333333; /* Darker grey for cards */
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e9ecef;
+    border: 1px solid #444444;
 }
 
 .publication-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .publication-details {
@@ -439,14 +439,14 @@ h2 {
 .publication-title {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #f0f0f0; /* Off-white */
     display: block;
     margin-bottom: 8px;
 }
 
 .publication-meta {
     font-size: 0.9rem;
-    color: #666666;
+    color: #bbbbbb; /* Lighter grey */
     line-height: 1.5;
 }
 
@@ -455,11 +455,11 @@ h2 {
 }
 
 .publication-link {
-    /* Updated: Pink button */
+    /* Updated: Muted blue-grey button */
     display: inline-flex;
     align-items: center;
-    background-color: #FF69B4; /* Hot Pink */
-    color: #2c3e50; /* Dark text for contrast */
+    background-color: #607d8b; /* Muted blue-grey */
+    color: #f0f0f0; /* Off-white text for contrast */
     padding: 10px 18px;
     border-radius: 5px;
     text-decoration: none;
@@ -470,7 +470,7 @@ h2 {
 }
 
 .publication-link:hover {
-    background-color: #FF1493; /* Deeper pink on hover */
+    background-color: #78909c; /* Slightly lighter muted blue-grey on hover */
     transform: translateY(-2px);
 }
 
@@ -479,11 +479,11 @@ h2 {
 #skills {
     position: relative;
     padding: 50px 0;
-    /* Updated: Light grey background for skills section */
-    background: radial-gradient(circle at center, #e0e0e0 0%, #d5d5d5 70%, #f4f7f9 100%); /* Slightly darker grey gradient */
+    /* Updated: Dark grey background for skills section */
+    background: radial-gradient(circle at center, #222222 0%, #282828 70%, #333333 100%);
     border-radius: 15px; /* Keep consistent with container */
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -497,8 +497,8 @@ h2 {
 }
 
 #skills h2 {
-    color: #2c3e50;
-    border-left-color: #FF69B4; /* Hot Pink */
+    color: #f0f0f0; /* Off-white */
+    border-left-color: #607d8b; /* Muted blue-grey */
     margin-bottom: 40px;
 }
 
@@ -514,16 +514,16 @@ h2 {
 }
 
 .skill-tag {
-    background-color: #ffffff;
-    color: #2c3e50;
+    background-color: #333333; /* Darker grey for skill tags */
+    color: #cccccc; /* Light grey */
     padding: 15px 20px;
     border-radius: 10px;
     font-size: 1.05rem;
     font-weight: 600;
-    border: 1px solid #e0e6ed;
+    border: 1px solid #444444;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     cursor: default;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     display: flex;
     flex-direction: column; /* Stack text and level indicator */
     align-items: center;
@@ -535,9 +535,9 @@ h2 {
 }
 
 .skill-tag:hover {
-    background-color: #fcfcfc; /* Slightly lighter on hover */
+    background-color: #3a3a3a; /* Slightly lighter on hover */
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* Skill Level Indicator (Circle Measuring Wheel Concept) */
@@ -549,53 +549,47 @@ h2 {
     width: 30px; /* Larger circle */
     height: 30px;
     border-radius: 50%;
-    background-color: #e0e0e0; /* Default background for the circle */
+    background-color: #424242; /* Dark grey for empty part of circle */
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.8rem; /* Smaller font for percentage text */
     font-weight: 700;
-    color: #2c3e50; /* Dark text for percentages */
-    box-shadow: inset 0 0 0 2px rgba(0,0,0,0.1);
+    color: #cccccc; /* Light grey text for percentages */
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,0.2);
     transition: background 0.3s ease; /* Smooth transition for background change */
 }
 
 /* Data-percentage based styling for the "measuring wheel" effect */
-/* Using shades of pink for the percentages */
+/* Using shades of muted blue-grey for the percentages */
 .skill-tag[data-percentage="100"]::before {
-    background: conic-gradient(#FF6680 0%, #FF6680 100%, #e0e0e0 100%); /* Strong Pink */
-    color: white; /* White text for better contrast on strong pink */
+    background: conic-gradient(#607d8b 0%, #607d8b 100%, #424242 100%); /* Muted blue-grey fill */
+    color: #f0f0f0; /* Off-white text for better contrast */
 }
 
 .skill-tag[data-percentage="95"]::before {
-    background: conic-gradient(#FF99AA 0%, #FF99AA 95%, #e0e0e0 95%); /* Medium Pink */
-    color: #2c3e50;
+    background: conic-gradient(#607d8b 0%, #607d8b 95%, #424242 95%);
 }
 
 .skill-tag[data-percentage="90"]::before {
-    background: conic-gradient(#FFB6C1 0%, #FFB6C1 90%, #e0e0e0 90%); /* Light Pink */
-    color: #2c3e50;
+    background: conic-gradient(#607d8b 0%, #607d8b 90%, #424242 90%);
 }
 
 .skill-tag[data-percentage="85"]::before {
-    background: conic-gradient(#FFD1D9 0%, #FFD1D9 85%, #e0e0e0 85%); /* Lighter Pink */
-    color: #2c3e50;
+    background: conic-gradient(#607d8b 0%, #607d8b 85%, #424242 85%);
 }
 
 .skill-tag[data-percentage="80"]::before {
-    background: conic-gradient(#FFE6EB 0%, #FFE6EB 80%, #e0e0e0 80%); /* Very Light Pink */
-    color: #2c3e50;
+    background: conic-gradient(#607d8b 0%, #607d8b 80%, #424242 80%);
 }
 
 .skill-tag[data-percentage="75"]::before {
-    background: conic-gradient(#FFF0F3 0%, #FFF0F3 75%, #e0e0e0 75%); /* Almost White Pink */
-    color: #2c3e50;
+    background: conic-gradient(#607d8b 0%, #607d8b 75%, #424242 75%);
 }
 
 .skill-tag[data-percentage="70"]::before {
-    background: conic-gradient(#F8F8F8 0%, #F8F8F8 70%, #e0e0e0 70%); /* Hint of Pink, mostly Grey */
-    color: #2c3e50;
+    background: conic-gradient(#607d8b 0%, #607d8b 70%, #424242 70%);
 }
 
 /* Text inside skill tag */
@@ -617,7 +611,7 @@ h2 {
         top: 0;
         bottom: 0;
         width: 2px;
-        background-color: #e0e0e0;
+        background-color: #444444; /* Darker grey timeline line */
         transform: translateX(-50%);
         z-index: 0;
     }
@@ -632,26 +626,26 @@ h2 {
 }
 
 .timeline-dot {
-    background-color: #FF69B4; /* Hot Pink */
+    background-color: #607d8b; /* Muted blue-grey */
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid #282828; /* Matches container background */
     position: absolute;
     left: 50%;
     top: 25px;
     transform: translateX(-50%);
     z-index: 1;
-    box-shadow: 0 0 0 4px rgba(255,105,180,0.2); /* Pink shadow */
+    box-shadow: 0 0 0 4px rgba(96,125,139,0.2); /* Muted blue-grey shadow */
 }
 
 .timeline-content {
-    background-color: #ffffff;
+    background-color: #333333; /* Darker grey for content cards */
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #444444;
     width: calc(50% - 40px);
     margin: 0 20px;
     position: relative;
@@ -668,7 +662,7 @@ h2 {
 
 .timeline-content:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
 .experience-header {
@@ -681,13 +675,13 @@ h2 {
 
 .experience-role {
     font-size: 1.25rem;
-    color: #2c3e50;
+    color: #f0f0f0; /* Off-white */
     font-weight: 700;
 }
 
 .experience-org-duration {
     font-size: 0.95rem;
-    color: #666666;
+    color: #bbbbbb; /* Lighter grey */
     font-weight: 500;
     margin-left: 15px;
     flex-shrink: 0;
@@ -695,16 +689,16 @@ h2 {
 
 .experience-description {
     font-size: 1rem;
-    color: #4a4a4a;
+    color: #cccccc; /* Light grey */
     line-height: 1.6;
 }
 
 /* 15. Combined Interests and Gallery Section - NEW ARRANGEMENT */
 #interests-gallery {
     padding: 50px;
-    background-color: #f7f9fb;
+    background-color: #222222; /* Darker background for this section */
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -712,8 +706,8 @@ h2 {
 }
 
 #interests-gallery h2 {
-    color: #2c3e50;
-    border-left-color: #FF69B4; /* Hot Pink */
+    color: #f0f0f0; /* Off-white */
+    border-left-color: #607d8b; /* Muted blue-grey */
     margin-bottom: 30px;
     text-align: center;
     border-left: none;
@@ -724,7 +718,7 @@ h2 {
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #FF69B4; /* Hot Pink */
+    background-color: #607d8b; /* Muted blue-grey */
     margin: 15px auto 0 auto;
     border-radius: 2px;
 }
@@ -737,11 +731,11 @@ h2 {
 
 .interests-area, .gallery-area {
     flex: 1;
-    background-color: #ffffff;
+    background-color: #333333; /* Darker grey for sub-areas */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    border: 1px solid #e0e6ed;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    border: 1px solid #444444;
 }
 
 /* Removed subheadings for interests and gallery */
@@ -758,32 +752,32 @@ h2 {
 }
 
 .interest-item {
-    background-color: #f8f8f8;
+    background-color: #424242; /* Darker grey for interest items */
     padding: 15px 25px;
     border-radius: 10px; /* Rectangular objects with rounded corners */
     font-size: 1.05rem;
-    color: #4a4a4a;
+    color: #cccccc; /* Light grey */
     font-weight: 500;
-    border: 1px solid #e0e6ed;
+    border: 1px solid #555555;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     min-height: 50px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .interest-item:hover {
-    background-color: #fcfcfc; /* Slightly lighter on hover */
+    background-color: #555555; /* Slightly lighter on hover */
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 }
 
 /* Gallery Specific Styles */
 .gallery-description {
     font-size: 1rem;
-    color: #666;
+    color: #bbbbbb; /* Lighter grey */
     margin-bottom: 20px;
     text-align: center;
 }
@@ -795,13 +789,13 @@ h2 {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 15px;
     margin-top: 20px;
-    border-top: 1px dashed #e0e0e0;
+    border-top: 1px dashed #444444; /* Darker dashed border */
     padding-top: 20px;
 }
 
 .gallery-item {
-    background-color: #fcfcfc;
-    border: 1px solid #e0e0e0;
+    background-color: #424242; /* Darker grey for gallery items */
+    border: 1px solid #555555;
     border-radius: 8px;
     padding: 10px;
     display: flex;
@@ -812,7 +806,7 @@ h2 {
     height: 150px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
     text-decoration: none; /* Ensure links don't have default underline */
     color: inherit; /* Inherit text color */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -820,7 +814,7 @@ h2 {
 
 .gallery-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 }
 
 .gallery-item img {
@@ -832,13 +826,13 @@ h2 {
 
 .gallery-item .file-icon {
     font-size: 3rem;
-    color: #FF69B4; /* Hot Pink */
+    color: #607d8b; /* Muted blue-grey */
     margin-bottom: 10px;
 }
 
 .gallery-item .file-name {
     font-size: 0.8rem;
-    color: #555;
+    color: #bbbbbb; /* Lighter grey */
     word-break: break-all;
     padding: 0 5px;
 }
@@ -860,25 +854,25 @@ h2 {
 }
 
 .contact-links p {
-    background-color: #fcfcfc;
+    background-color: #333333; /* Darker grey for contact links */
     padding: 15px 20px;
     border-radius: 8px;
     font-size: 1.1rem;
-    color: #4a4a4a;
+    color: #cccccc; /* Light grey */
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #444444;
 }
 
 .contact-links p:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 }
 
 .contact-links p i {
-    color: #FF69B4; /* Hot Pink */
+    color: #607d8b; /* Muted blue-grey */
     font-size: 1.3rem;
     width: 30px;
     text-align: center;
@@ -886,7 +880,7 @@ h2 {
 }
 
 .contact-links p a {
-    color: #FF69B4; /* Hot Pink */
+    color: #607d8b; /* Muted blue-grey */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -894,18 +888,18 @@ h2 {
 }
 
 .contact-links p a:hover {
-    color: #FF1493; /* Deeper pink on hover */
+    color: #78909c; /* Slightly lighter muted blue-grey on hover */
     text-decoration: underline;
 }
 
 /* 17. Call to Action Section - Moved to be under contact */
 #cta {
-    /* Updated: Light pink background for CTA */
-    background-color: #fce4ec; /* Lightest pink */
-    color: #2c3e50;
+    /* Updated: Dark grey background for CTA */
+    background-color: #222222; /* Matches header/section background */
+    color: #f0f0f0; /* Off-white */
     border-radius: 15px;
     margin-top: 60px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     padding: 40px 30px;
     display: flex;
     flex-direction: column;
@@ -916,8 +910,8 @@ h2 {
 }
 
 #cta h2 {
-    color: #2c3e50;
-    border-left-color: #FF69B4; /* Hot Pink */
+    color: #f0f0f0; /* Off-white */
+    border-left-color: #607d8b; /* Muted blue-grey */
     margin-bottom: 15px;
 }
 
@@ -928,20 +922,20 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    color: #4a4a4a;
+    color: #cccccc; /* Light grey */
 }
 
 #cta .hero-button {
-    background-color: #FF69B4; /* Hot Pink */
-    color: #2c3e50; /* Dark text for contrast */
-    box-shadow: 0 5px 15px rgba(255,105,180,0.3); /* Pink shadow */
+    background-color: #607d8b; /* Muted blue-grey */
+    color: #f0f0f0; /* Off-white text for contrast */
+    box-shadow: 0 5px 15px rgba(96,125,139,0.3); /* Muted blue-grey shadow */
 }
 
 #cta .hero-button:hover {
-    background-color: #FF1493; /* Deeper pink on hover */
-    color: #2c3e50; /* Dark text for contrast */
+    background-color: #78909c; /* Slightly lighter muted blue-grey on hover */
+    color: #f0f0f0; /* Off-white text for contrast */
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(255,20,147,0.3); /* Darker pink shadow */
+    box-shadow: 0 8px 20px rgba(120,144,156,0.3); /* Darker shadow */
 }
 
 /* Horizontal layout for CTA on larger screens */
@@ -960,7 +954,6 @@ h2 {
     }
     #cta .cta-text {
         margin-bottom: 0;
-        margin-right: 30px;
         flex-grow: 1;
     }
 }
@@ -970,23 +963,23 @@ h2 {
 footer {
     text-align: center;
     padding: 30px 0;
-    color: #666666;
+    color: #999999; /* Softer grey */
     font-size: 0.95rem;
-    background-color: #e0e6ed;
-    border-top: 1px solid #d0d6dd;
+    background-color: #222222; /* Matches header/section background */
+    border-top: 1px solid #333333;
     width: 100%;
     margin-top: auto;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.15);
 }
 
 /* 19. Back to Top Button */
 #backToTopBtn {
-    /* Updated: Pink button */
+    /* Updated: Muted blue-grey button */
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #FF69B4; /* Hot Pink */
-    color: #2c3e50; /* Dark text for contrast */
+    background-color: #607d8b; /* Muted blue-grey */
+    color: #f0f0f0; /* Off-white text for contrast */
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -996,7 +989,7 @@ footer {
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(255,105,180,0.4); /* Pink shadow */
+    box-shadow: 0 4px 12px rgba(96,125,139,0.4); /* Muted blue-grey shadow */
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -1009,9 +1002,9 @@ footer {
 }
 
 #backToTopBtn:hover {
-    background-color: #FF1493; /* Deeper pink on hover */
+    background-color: #78909c; /* Slightly lighter muted blue-grey on hover */
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(255,20,147,0.5); /* Darker pink shadow */
+    box-shadow: 0 6px 15px rgba(120,144,156,0.5); /* Darker shadow */
 }
 
 
@@ -1319,3 +1312,4 @@ footer {
         right: 15px;
     }
 }
+
