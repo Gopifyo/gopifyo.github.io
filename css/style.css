@@ -15,7 +15,6 @@
 /* 2. Body styles - The overall background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
-    /* NEW: Soft, light gray background with a subtle, cool gradient for depth */
     background: linear-gradient(135deg, #fbfcfd 0%, #f4f7f9 100%);
     color: #333333; /* Default dark gray text color for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
@@ -762,34 +761,14 @@ h2 {
 }
 
 /* Gallery Specific Styles */
-.gallery-upload-text {
+.gallery-description { /* New style for the description text */
     font-size: 1rem;
     color: #666;
-    margin-bottom: 15px;
-}
-
-.hidden-input {
-    display: none;
-}
-
-.upload-button {
-    display: inline-flex;
-    align-items: center;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.upload-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
+/* Removed .gallery-upload-text, .hidden-input, .upload-button as they are no longer in HTML */
 
 .gallery-preview-grid {
     display: grid;
@@ -814,6 +793,14 @@ h2 {
     overflow: hidden;
     position: relative;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-decoration: none; /* Ensure links don't have default underline */
+    color: inherit; /* Inherit text color */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .gallery-item img {
