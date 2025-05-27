@@ -1204,3 +1204,16 @@ footer.main-footer {
         font-size: 0.95rem;
     }
 }
+
+/* Floating animation for dynamic greetings */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.dynamic-greeting {
+    display: inline-block; /* Essential for transform to work */
+    animation: float 2s ease-in-out infinite;
+    transition: opacity 0.5s ease-in-out; /* Keep fade effect */
+}
