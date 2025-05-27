@@ -556,34 +556,40 @@ h2 {
 }
 
 /* Data-percentage based styling for the "measuring wheel" effect */
+/* Using #FFB6C1 for light pink */
 .skill-tag[data-percentage="100"]::before {
-    background: conic-gradient(#28a745 0%, #28a745 100%, #e0e0e0 100%); /* Full green circle */
-    color: white; /* White text for better contrast on green */
+    background: conic-gradient(#FFB6C1 0%, #FFB6C1 100%, #e0e0e0 100%); /* Full pink circle */
+    color: #2c3e50; /* Dark text for better contrast on pink */
 }
 
 .skill-tag[data-percentage="95"]::before {
-    background: conic-gradient(#28a745 0%, #28a745 95%, #e0e0e0 95%); /* 95% green fill */
-    color: white;
+    background: conic-gradient(#FFB6C1 0%, #FFB6C1 95%, #e0e0e0 95%); /* 95% pink fill */
+    color: #2c3e50;
 }
 
 .skill-tag[data-percentage="90"]::before {
-    background: conic-gradient(#007bff 0%, #007bff 90%, #e0e0e0 90%); /* 90% blue fill */
+    background: conic-gradient(#FFB6C1 0%, #FFB6C1 90%, #e0e0e0 90%); /* 90% pink fill */
+    color: #2c3e50;
 }
 
 .skill-tag[data-percentage="85"]::before {
-    background: conic-gradient(#007bff 0%, #007bff 85%, #e0e0e0 85%); /* 85% blue fill */
+    background: conic-gradient(#FFB6C1 0%, #FFB6C1 85%, #e0e0e0 85%); /* 85% pink fill */
+    color: #2c3e50;
 }
 
 .skill-tag[data-percentage="80"]::before {
-    background: conic-gradient(#007bff 0%, #007bff 80%, #e0e0e0 80%); /* 80% blue fill */
+    background: conic-gradient(#FFB6C1 0%, #FFB6C1 80%, #e0e0e0 80%); /* 80% pink fill */
+    color: #2c3e50;
 }
 
 .skill-tag[data-percentage="75"]::before {
-    background: conic-gradient(#ffc107 0%, #ffc107 75%, #e0e0e0 75%); /* 75% yellow fill */
+    background: conic-gradient(#FFB6C1 0%, #FFB6C1 75%, #e0e0e0 75%); /* 75% pink fill */
+    color: #2c3e50;
 }
 
 .skill-tag[data-percentage="70"]::before {
-    background: conic-gradient(#ffc107 0%, #ffc107 70%, #e0e0e0 70%); /* 70% yellow fill */
+    background: conic-gradient(#FFB6C1 0%, #FFB6C1 70%, #e0e0e0 70%); /* 70% pink fill */
+    color: #2c3e50;
 }
 
 /* Text inside skill tag */
