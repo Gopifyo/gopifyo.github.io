@@ -16,7 +16,7 @@
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
     /* Updated: Soft, light gray background with a subtle, cool gradient for depth */
-    background: linear-gradient(135deg, #fbfcfd 0%, #f4f7f9 100%);
+    background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%); /* Lighter grey background */
     color: #333333; /* Default dark gray text color for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
@@ -122,7 +122,7 @@ nav a.nav-link {
 }
 
 nav a.nav-link:hover {
-    color: #FFB6C1; /* Changed to light pink */
+    color: #FF69B4; /* Hot Pink */
     background-color: transparent;
     transform: translateY(-2px); /* More pronounced lift */
 }
@@ -135,7 +135,7 @@ nav a.nav-link::after {
     height: 2px;
     bottom: -8px; /* Lower underline */
     left: 0;
-    background-color: #FFB6C1; /* Changed to light pink */
+    background-color: #FF69B4; /* Hot Pink */
     transition: width 0.3s ease;
 }
 
@@ -145,14 +145,14 @@ nav a.nav-link.active::after {
 }
 
 nav a.nav-link.active {
-    color: #FFB6C1; /* Changed to light pink */
+    color: #FF69B4; /* Hot Pink */
 }
 
 
 /* 5. Hero Section: Prominent introductory banner with a potential split layout */
 #hero-banner {
     /* Updated: Light pink gradient background */
-    background: linear-gradient(135deg, #fceae0 0%, #f7d9d9 100%);
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); /* Softer pink gradient */
     background-repeat: repeat;
     background-size: 100px 100px;
     padding: 120px 20px;
@@ -214,10 +214,10 @@ nav a.nav-link.active {
 }
 
 .hero-button {
-    /* Updated: Light pink button */
+    /* Updated: Pink button */
     display: inline-flex;
     align-items: center;
-    background-color: #FFB6C1; /* Light pink */
+    background-color: #FF69B4; /* Hot Pink */
     color: #2c3e50; /* Dark text for contrast */
     padding: 16px 40px;
     border-radius: 50px;
@@ -225,13 +225,13 @@ nav a.nav-link.active {
     font-weight: 600;
     font-size: 1.2rem;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255,182,193,0.3); /* Pink shadow */
+    box-shadow: 0 5px 15px rgba(255,105,180,0.3); /* Pink shadow */
 }
 
 .hero-button:hover {
-    background-color: #FF99AA; /* Slightly darker pink on hover */
+    background-color: #FF1493; /* Deeper pink on hover */
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(255,153,170,0.5); /* Darker pink shadow */
+    box-shadow: 0 10px 25px rgba(255,20,147,0.5); /* Darker pink shadow */
 }
 
 
@@ -276,7 +276,7 @@ section.fade-in.is-visible {
 h2 {
     margin-bottom: 30px;
     color: #2c3e50;
-    border-left: 5px solid #FFB6C1; /* Changed to light pink */
+    border-left: 5px solid #FF69B4; /* Hot Pink */
     padding-left: 20px;
     font-weight: 700;
     font-size: 2.2rem;
@@ -290,7 +290,7 @@ h2 {
     border-radius: 50%;
     display: block;
     object-fit: cover;
-    border: 4px solid #FFB6C1; /* Changed to light pink */
+    border: 4px solid #FF69B4; /* Hot Pink */
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -369,10 +369,10 @@ h2 {
 }
 
 .card-link {
-    /* Updated: Light pink link */
+    /* Updated: Pink link */
     display: inline-flex;
     align-items: center;
-    color: #FFB6C1; /* Light pink */
+    color: #FF69B4; /* Hot Pink */
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -380,7 +380,7 @@ h2 {
 }
 
 .card-link:hover {
-    color: #FF99AA; /* Slightly darker pink on hover */
+    color: #FF1493; /* Deeper pink on hover */
     transform: translateX(5px);
 }
 
@@ -455,10 +455,10 @@ h2 {
 }
 
 .publication-link {
-    /* Updated: Light pink button */
+    /* Updated: Pink button */
     display: inline-flex;
     align-items: center;
-    background-color: #FFB6C1; /* Light pink */
+    background-color: #FF69B4; /* Hot Pink */
     color: #2c3e50; /* Dark text for contrast */
     padding: 10px 18px;
     border-radius: 5px;
@@ -470,7 +470,7 @@ h2 {
 }
 
 .publication-link:hover {
-    background-color: #FF99AA; /* Slightly darker pink on hover */
+    background-color: #FF1493; /* Deeper pink on hover */
     transform: translateY(-2px);
 }
 
@@ -480,7 +480,7 @@ h2 {
     position: relative;
     padding: 50px 0;
     /* Updated: Light grey background for skills section */
-    background: radial-gradient(circle at center, #f0f0f0 0%, #e8e8e8 70%, #f4f7f9 100%);
+    background: radial-gradient(circle at center, #e0e0e0 0%, #d5d5d5 70%, #f4f7f9 100%); /* Slightly darker grey gradient */
     border-radius: 15px; /* Keep consistent with container */
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -498,7 +498,7 @@ h2 {
 
 #skills h2 {
     color: #2c3e50;
-    border-left-color: #FFB6C1; /* Changed to light pink */
+    border-left-color: #FF69B4; /* Hot Pink */
     margin-bottom: 40px;
 }
 
@@ -632,7 +632,7 @@ h2 {
 }
 
 .timeline-dot {
-    background-color: #FFB6C1; /* Changed to light pink */
+    background-color: #FF69B4; /* Hot Pink */
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -642,7 +642,7 @@ h2 {
     top: 25px;
     transform: translateX(-50%);
     z-index: 1;
-    box-shadow: 0 0 0 4px rgba(255,182,193,0.2); /* Pink shadow */
+    box-shadow: 0 0 0 4px rgba(255,105,180,0.2); /* Pink shadow */
 }
 
 .timeline-content {
@@ -713,7 +713,7 @@ h2 {
 
 #interests-gallery h2 {
     color: #2c3e50;
-    border-left-color: #FFB6C1; /* Changed to light pink */
+    border-left-color: #FF69B4; /* Hot Pink */
     margin-bottom: 30px;
     text-align: center;
     border-left: none;
@@ -724,7 +724,7 @@ h2 {
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #FFB6C1; /* Changed to light pink */
+    background-color: #FF69B4; /* Hot Pink */
     margin: 15px auto 0 auto;
     border-radius: 2px;
 }
@@ -832,7 +832,7 @@ h2 {
 
 .gallery-item .file-icon {
     font-size: 3rem;
-    color: #FFB6C1; /* Changed to light pink */
+    color: #FF69B4; /* Hot Pink */
     margin-bottom: 10px;
 }
 
@@ -878,7 +878,7 @@ h2 {
 }
 
 .contact-links p i {
-    color: #FFB6C1; /* Changed to light pink */
+    color: #FF69B4; /* Hot Pink */
     font-size: 1.3rem;
     width: 30px;
     text-align: center;
@@ -886,7 +886,7 @@ h2 {
 }
 
 .contact-links p a {
-    color: #FFB6C1; /* Changed to light pink */
+    color: #FF69B4; /* Hot Pink */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -894,14 +894,14 @@ h2 {
 }
 
 .contact-links p a:hover {
-    color: #FF99AA; /* Slightly darker pink on hover */
+    color: #FF1493; /* Deeper pink on hover */
     text-decoration: underline;
 }
 
 /* 17. Call to Action Section - Moved to be under contact */
 #cta {
     /* Updated: Light pink background for CTA */
-    background-color: #ffebee; /* Very light pink */
+    background-color: #fce4ec; /* Lightest pink */
     color: #2c3e50;
     border-radius: 15px;
     margin-top: 60px;
@@ -917,7 +917,7 @@ h2 {
 
 #cta h2 {
     color: #2c3e50;
-    border-left-color: #FFB6C1; /* Changed to light pink */
+    border-left-color: #FF69B4; /* Hot Pink */
     margin-bottom: 15px;
 }
 
@@ -932,16 +932,16 @@ h2 {
 }
 
 #cta .hero-button {
-    background-color: #FFB6C1; /* Light pink */
+    background-color: #FF69B4; /* Hot Pink */
     color: #2c3e50; /* Dark text for contrast */
-    box-shadow: 0 5px 15px rgba(255,182,193,0.3); /* Pink shadow */
+    box-shadow: 0 5px 15px rgba(255,105,180,0.3); /* Pink shadow */
 }
 
 #cta .hero-button:hover {
-    background-color: #FF99AA; /* Slightly darker pink on hover */
+    background-color: #FF1493; /* Deeper pink on hover */
     color: #2c3e50; /* Dark text for contrast */
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(255,153,170,0.3); /* Darker pink shadow */
+    box-shadow: 0 8px 20px rgba(255,20,147,0.3); /* Darker pink shadow */
 }
 
 /* Horizontal layout for CTA on larger screens */
@@ -981,11 +981,11 @@ footer {
 
 /* 19. Back to Top Button */
 #backToTopBtn {
-    /* Updated: Light pink button */
+    /* Updated: Pink button */
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #FFB6C1; /* Light pink */
+    background-color: #FF69B4; /* Hot Pink */
     color: #2c3e50; /* Dark text for contrast */
     width: 50px;
     height: 50px;
@@ -996,7 +996,7 @@ footer {
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(255,182,193,0.4); /* Pink shadow */
+    box-shadow: 0 4px 12px rgba(255,105,180,0.4); /* Pink shadow */
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -1009,9 +1009,9 @@ footer {
 }
 
 #backToTopBtn:hover {
-    background-color: #FF99AA; /* Slightly darker pink on hover */
+    background-color: #FF1493; /* Deeper pink on hover */
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(255,153,170,0.5); /* Darker pink shadow */
+    box-shadow: 0 6px 15px rgba(255,20,147,0.5); /* Darker pink shadow */
 }
 
 
