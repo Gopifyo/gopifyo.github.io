@@ -2,142 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gobinath Chithiravelu | Bioengineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Gobinath | Bioengineer</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <header>
-    <div class="header-content">
-      <div class="site-branding">
-        <h1>Gobinath Chithiravelu</h1>
-        <p class="tagline">Bioengineer & Entrepreneur</p>
-      </div>
-      <nav>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#publications" class="nav-link">Publications</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#interests" class="nav-link">Interests</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-    </div>
+    <h1>Dr. Gobinath</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section id="hero-banner">
-    <div class="hero-content">
-      <h2>Innovating at the Intersection of Biology and Engineering</h2>
-      <p>Passionate about Personalized Medicine and Sustainable Biomanufacturing.</p>
-      <a href="#projects" class="hero-button">Explore My Work <i class="fas fa-arrow-right"></i></a>
+    <h2>Bioengineer | 3D Bioprinting | Cellular Agriculture</h2>
+    <p>Exploring the frontier of tissue engineering and sustainable biomanufacturing.</p>
+    <button class="hero-button">View My Work</button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <img src="profile.jpg" alt="Profile photo" class="profile-img" />
+      <p>
+        I am a PhD researcher working at the intersection of biomaterials, tissue engineering, and cellular agriculture.
+        My passion lies in building human-relevant models and engineered meat using 3D bioprinting and biomimetic design.
+      </p>
     </div>
   </section>
 
-  <main class="container">
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <img src="images/profile.jpg" alt="Gobinath Chithiravelu" class="profile-img" />
-        <div>
-          <p>I’m Gobinath, a Joint PhD student in Bioengineering at Oregon State University & University of Oregon. My research focuses on innovations in tissue engineering, cultivated meat, and regenerative medicine.</p>
-          <p>I thrive on interdisciplinary collaboration and believe in engineering biology to solve global challenges.</p>
-        </div>
+  <section id="research">
+    <h2>Research Interests</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>3D Bioprinting</h3>
+        <p>Designing bioinks and scaffolds for cardiac tissue and lab-grown meat applications.</p>
       </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Decellularized Seaweed Scaffold</h3>
-          <p>Sustainable scaffolds for cultivated meat using marine biomaterials.</p>
-          <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="card">
-          <h3>Organoid-on-Chip</h3>
-          <p>Microfluidic platforms for drug testing in cancer therapy.</p>
-          <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="card">
-          <h3>Zein Nanocomposites</h3>
-          <p>Biopolymer-based drug delivery systems for targeted chemotherapy.</p>
-          <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
+      <div class="card">
+        <h3>Cellular Agriculture</h3>
+        <p>Engineering edible scaffolds and muscle-fat co-cultures for cultivated meat production.</p>
       </div>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul class="pub-list">
-        <li>
-          <h3>"Novel Decellularized Algae Scaffolds"</h3>
-          <p><em>Journal of Bioengineering Research</em>, 2024</p>
-        </li>
-        <li>
-          <h3>"Microfluidic Organ-on-Chip Systems"</h3>
-          <p><em>Biomaterials Science</em>, 2023</p>
-        </li>
-        <li>
-          <h3>"Zein Nanoparticles for Drug Delivery"</h3>
-          <p><em>Nanomedicine Journal</em>, 2022</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>3D Bioprinting</span>
-        <span>Hydrogel Design</span>
-        <span>Microfluidics</span>
-        <span>MATLAB</span>
-        <span>Python</span>
-        <span>ImageJ</span>
-        <span>Cell Culture</span>
-        <span>Biomaterials</span>
-        <span>Scientific Writing</span>
+      <div class="card">
+        <h3>Organ-on-a-Chip</h3>
+        <p>Developing microfluidic platforms to model human cardiac diseases and screen therapeutics.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul class="experience-list">
-        <li>
-          <strong>PhD Research Associate</strong>, Oregon State University (2024–Present)
-        </li>
-        <li>
-          <strong>Research Associate</strong>, University of Texas El Paso (2024)
-        </li>
-        <li>
-          <strong>Researcher</strong>, ISMO Biophotonics (2022–2023)
-        </li>
-      </ul>
-    </section>
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <ul>
+      <li>Gobinath et al. (2024). <i>Bioinspired seaweed-gelatin scaffolds for muscle cell integration</i>. <b>Advanced Biomaterials</b>.</li>
+      <li>Gobinath et al. (2023). <i>Cardiotoxicity screening using 3D spheroidal droplet bioprints</i>. <b>Bioprinting</b>.</li>
+      <li>Gobinath et al. (2022). <i>ECM proteomic analysis in diabetic hearts</i>. <b>Regenerative Biomaterials</b>.</li>
+    </ul>
+  </section>
 
-    <!-- INTERESTS -->
-    <section id="interests">
-      <h2>Interests</h2>
-      <p>Tissue Engineering, Regenerative Medicine, Cultivated Meat, Soccer, Marathons, Tea, Startups</p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: gobinath.bio@gmail.com</p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/gobinath</a></p>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:gobinath.research@example.com">gobinath.research@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/gobinath">linkedin.com/in/gobinath</a></p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Gobinath Chithiravelu. All rights reserved.</p>
+    <p>&copy; 2025 Dr. Gobinath. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
-
