@@ -180,7 +180,7 @@ nav a.nav-link.active {
     gap: 40px; /* Space between hero text and visual area */
 }
 
-.hero-main-content {
+.hero-main-content { /* NEW: Wrapper for hero text and button */
     flex: 1; /* Allow text area to grow */
     min-width: 300px; /* Ensure it doesn't get too small */
     text-align: left; /* Align text to left within its area */
@@ -513,32 +513,95 @@ h2 {
 }
 
 
-/* 13. Skills Grid */
+/* 13. Skills Grid - NEW ARRANGEMENT (Circle Measuring Wheel Concept) */
+#skills {
+    position: relative;
+    padding: 50px 0;
+    /* NEW: Stronger radial gradient background for a more pronounced "circle" feel */
+    background: radial-gradient(circle at center, #d0e7f7 0%, #c0dcf0 70%, #f4f7f9 100%);
+    border-radius: 50%; /* Make the entire section feel circular if possible, or large value */
+    /* Adjust border-radius for larger screens to truly hint at a circle */
+    border-radius: 50% / 100px; /* Oval shape, wider than tall, to fit content */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    overflow: hidden; /* Hide anything outside the rounded corners */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Subtle shadow */
+    margin-top: 60px; /* Space from previous section */
+    display: flex; /* Use flex to center content */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Ensure content stays within the visual circular area on wider screens */
+    max-width: 900px; /* Constrain width to make border-radius more effective */
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Ensure the padding applies within the rounded shape */
+#skills .container-inner { /* Create a new inner container for content */
+    padding: 50px 20px; /* Adjust as needed */
+    width: 100%;
+}
+
+#skills h2 {
+    color: #2c3e50; /* Dark blue-gray heading */
+    border-left-color: #007bff; /* Blue accent */
+    margin-bottom: 40px; /* More space below heading */
+}
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 20px;
+    gap: 20px; /* Slightly larger gap for more distinct tags */
     justify-content: center; /* Center skills for a cleaner look */
+    max-width: 800px; /* Constrain width for better circular perception */
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px; /* Add some bottom padding inside the skills section */
 }
 
 .skill-tag {
-    background-color: #e9f5ff;
+    background-color: #ffffff; /* White background for tags */
     color: #007bff;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 0.95rem;
+    padding: 12px 25px; /* Larger padding for a more substantial look */
+    border-radius: 25px; /* More rounded, pill-shaped */
+    font-size: 1.05rem; /* Slightly larger font */
     font-weight: 500;
     border: 1px solid #cce5ff;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     cursor: default;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08); /* More prominent shadow */
+    position: relative; /* For the level indicator */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between text and indicator */
 }
 
 .skill-tag:hover {
-    background-color: #d6ebff;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #e0e6ed; /* Light gray on hover */
+    transform: translateY(-5px) rotate(2deg); /* Lift and slight rotation */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
+
+/* Level Indicator for skill tags (simulating a 'level') */
+.skill-tag::before {
+    content: '\f058'; /* Font Awesome check-circle icon as a placeholder */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* For solid icon */
+    color: #28a745; /* Green color, implying high level/proficiency */
+    font-size: 1rem;
+    line-height: 1;
+    margin-right: 5px; /* Space between icon and text */
+}
+/* You could define different pseudo-elements or classes for different levels
+   .skill-tag.level-expert::before { content: '\f058'; color: #28a745; }
+   .skill-tag.level-advanced::before { content: '\f111'; color: #007bff; } (filled circle)
+   .skill-tag.level-intermediate::before { content: '\f111'; color: #ffc107; } (half-filled circle, harder with CSS)
+*/
+
 
 /* 14. Experience Timeline - NEW ARRANGEMENT */
 .experience-timeline {
@@ -636,77 +699,68 @@ h2 {
     line-height: 1.6;
 }
 
-/* 15. Interests Grid - NEW ARRANGEMENT */
+/* 15. Interests Grid - NEW ARRANGEMENT (Horizontal with objects blend rectangular) */
+#interests {
+    /* Background for the section itself */
+    background-color: #f7f9fb; /* Very light, blending background */
+    border-radius: 15px; /* Match container border-radius */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* Soft shadow */
+    padding: 50px; /* Adjust padding for the section */
+    margin-top: 60px; /* Space from previous section */
+}
+
+#interests h2 {
+    color: #2c3e50;
+    border-left-color: #007bff;
+    margin-bottom: 30px;
+    text-align: center; /* Center the heading for this section */
+    border-left: none; /* Remove left border */
+    padding-left: 0; /* Remove padding */
+}
+/* Re-add a decorative element if desired, e.g., an underline: */
+#interests h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 15px auto 0 auto; /* Centered underline */
+    border-radius: 2px;
+}
+
 .interests-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* More flexible grid */
-    gap: 20px; /* Space between items */
+    display: flex; /* Use flexbox for horizontal arrangement */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 15px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
     margin-top: 20px;
 }
 
 .interest-item {
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #ffffff; /* White background for items */
+    padding: 15px 25px; /* Generous padding */
+    border-radius: 10px; /* Rounded corners for rectangular objects */
     font-size: 1.05rem;
     color: #4a4a4a;
     font-weight: 500;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e0e6ed; /* Soft, blending border */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 80px; /* Ensure consistent height */
+    min-height: 50px; /* Consistent height for items */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow for "blending" */
 }
 
 .interest-item:hover {
-    background-color: #eaf6fc;
-    transform: translateY(-5px); /* More pronounced lift */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    background-color: #eaf6fc; /* Light blue on hover for blending effect */
+    transform: translateY(-3px); /* Gentle lift */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* More pronounced shadow on hover */
 }
 
 
-/* 16. Call to Action Section */
-#cta {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-    color: white;
-    border-radius: 15px;
-    margin-top: 60px;
-    box-shadow: 0 10px 30px rgba(0,123,255,0.4);
-}
-
-#cta h2 {
-    color: white;
-    border-left-color: white;
-    margin-bottom: 20px;
-}
-
-#cta .cta-text {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-}
-
-#cta .hero-button {
-    background-color: white;
-    color: #007bff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-#cta .hero-button:hover {
-    background-color: #f0f0f0;
-    color: #0056b3;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-
-/* 17. Contact Links */
+/* 16. Contact Links */
 .contact-links {
     margin-top: 20px;
     display: grid;
@@ -752,6 +806,75 @@ h2 {
     color: #0056b3;
     text-decoration: underline;
 }
+
+/* 17. Call to Action Section - NEW ARRANGEMENT (Moved to be under contact) */
+#cta {
+    /* Reusing previous blending background, rectangular, horizontal layout */
+    background-color: #e9f5ff; /* A very light blue that blends */
+    color: #2c3e50; /* Dark text */
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 60px; /* Space from previous section (Contact) */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Softer shadow */
+    padding: 40px 30px; /* Adjusted padding */
+
+    display: flex; /* Use flexbox for horizontal arrangement */
+    flex-direction: column; /* Default to column on small screens */
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    text-align: center;
+    border-bottom: none; /* Ensure no border-bottom as it's typically the last section */
+}
+
+#cta h2 {
+    color: #2c3e50; /* Dark blue-gray heading */
+    border-left-color: #007bff; /* Blue accent */
+    margin-bottom: 15px; /* Less space below heading */
+}
+
+#cta .cta-text {
+    font-size: 1.1rem; /* Slightly smaller text */
+    margin-bottom: 30px; /* Less space */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: #4a4a4a; /* Softer text color */
+}
+
+#cta .hero-button { /* Reusing hero button style but with adjusted colors */
+    background-color: #007bff; /* Blue button */
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
+#cta .hero-button:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,123,255,0.3);
+}
+
+/* Horizontal layout for CTA on larger screens */
+@media (min-width: 769px) {
+    #cta {
+        flex-direction: row; /* Arrange horizontally */
+        justify-content: space-between; /* Space out content */
+        align-items: center; /* Vertically align */
+        padding: 40px 60px; /* More horizontal padding */
+        text-align: left; /* Align text to left */
+    }
+    #cta h2 {
+        margin-bottom: 0; /* No bottom margin when horizontal */
+        margin-right: 30px; /* Space from text */
+        flex-shrink: 0; /* Prevent heading from shrinking */
+    }
+    #cta .cta-text {
+        margin-bottom: 0; /* No bottom margin when horizontal */
+        margin-right: 30px; /* Space from button */
+        flex-grow: 1; /* Allow text to grow */
+    }
+}
+
 
 /* 18. Footer styles */
 footer {
@@ -932,6 +1055,12 @@ footer {
         justify-content: center;
     }
 
+    #skills {
+        padding: 30px 0; /* Adjust padding for mobile */
+        border-radius: 30px; /* Simpler rounded corners on mobile */
+        max-width: 100%; /* Allow full width */
+    }
+
     .skills-grid {
         justify-content: center;
     }
@@ -986,8 +1115,19 @@ footer {
         margin-top: 5px;
     }
 
+    #interests {
+        padding: 30px; /* Adjust padding for mobile */
+    }
+    #interests h2 {
+        text-align: left; /* Align heading left again on mobile */
+        margin-bottom: 20px;
+    }
+    #interests h2::after {
+        margin: 10px 0 0 0; /* Align underline left */
+    }
+
     .interests-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        justify-content: center;
     }
 
     .contact-links {
@@ -1068,3 +1208,4 @@ footer {
         right: 15px;
     }
 }
+
