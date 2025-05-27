@@ -21,7 +21,7 @@
                 <a href="#publications" class="nav-link">Publications</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experience</a>
-                <a href="#interests" class="nav-link">Interests</a>
+                <a href="#interests-gallery" class="nav-link">Interests & Gallery</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
         </div>
@@ -36,7 +36,10 @@
                     Explore My Work <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
-            </div>
+            <!-- Optional: Add an image or illustration here for a split hero.
+                 Example: <div class="hero-visual-area"><img src="images/hero-illustration.png" alt="Bioengineering Illustration" class="hero-illustration"></div>
+            -->
+        </div>
     </section>
 
     <div class="container">
@@ -122,18 +125,18 @@
         <section id="skills" class="fade-in" aria-labelledby="skills-heading">
             <h2 id="skills-heading">Skills & Expertise</h2>
             <div class="skills-grid">
-                <span class="skill-tag">3D Bioprinting</span>
-                <span class="skill-tag">Genetic Modification</span>
-                <span class="skill-tag">Hydrogel Design</span>
-                <span class="skill-tag">Microfluidics</span>
-                <span class="skill-tag">ImageJ</span>
-                <span class="skill-tag">MATLAB</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SolidWorks</span>
-                <span class="skill-tag">Biomaterials</span>
-                <span class="skill-tag">Cell Culture</span>
-                <span class="skill-tag">Data Analysis</span>
-                <span class="skill-tag">Scientific Writing</span>
+                <span class="skill-tag" data-level="expert">3D Bioprinting</span>
+                <span class="skill-tag" data-level="advanced">Genetic Modification</span>
+                <span class="skill-tag" data-level="expert">Hydrogel Design</span>
+                <span class="skill-tag" data-level="advanced">Microfluidics</span>
+                <span class="skill-tag" data-level="intermediate">ImageJ</span>
+                <span class="skill-tag" data-level="intermediate">MATLAB</span>
+                <span class="skill-tag" data-level="expert">Python</span>
+                <span class="skill-tag" data-level="advanced">SolidWorks</span>
+                <span class="skill-tag" data-level="expert">Biomaterials</span>
+                <span class="skill-tag" data-level="expert">Cell Culture</span>
+                <span class="skill-tag" data-level="advanced">Data Analysis</span>
+                <span class="skill-tag" data-level="expert">Scientific Writing</span>
             </div>
         </section>
 
@@ -173,16 +176,32 @@
             </div>
         </section>
 
-        <section id="interests" class="fade-in" aria-labelledby="interests-heading">
-            <h2 id="interests-heading">Interests</h2>
-            <div class="interests-grid">
-                <div class="interest-item">Tissue Engineering</div>
-                <div class="interest-item">Regenerative Medicine</div>
-                <div class="interest-item">Cultivated Meat</div>
-                <div class="interest-item">Soccer</div>
-                <div class="interest-item">Marathons</div>
-                <div class="interest-item">Tea Enthusiast</div>
-                <div class="interest-item">Startup Innovation</div>
+        <section id="interests-gallery" class="fade-in" aria-labelledby="interests-gallery-heading">
+            <h2 id="interests-gallery-heading">Interests & Gallery</h2>
+            <div class="interests-gallery-content">
+                <div class="interests-area">
+                    <h3>My Passions</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item">Tissue Engineering</div>
+                        <div class="interest-item">Regenerative Medicine</div>
+                        <div class="interest-item">Cultivated Meat</div>
+                        <div class="interest-item">Soccer</div>
+                        <div class="interest-item">Marathons</div>
+                        <div class="interest-item">Tea Enthusiast</div>
+                        <div class="interest-item">Startup Innovation</div>
+                    </div>
+                </div>
+
+                <div class="gallery-area">
+                    <h3>My Visuals</h3>
+                    <p class="gallery-upload-text">Upload images or files to showcase your work or interests!</p>
+                    <input type="file" id="gallery-upload" multiple accept="image/*, .pdf, .doc, .docx" class="hidden-input">
+                    <label for="gallery-upload" class="upload-button">
+                        <i class="fas fa-cloud-upload-alt mr-2"></i> Upload Files
+                    </label>
+                    <div id="gallery-preview" class="gallery-preview-grid">
+                        </div>
+                </div>
             </div>
         </section>
 
@@ -284,7 +303,10 @@
 
                 navLinks.forEach(link => {
                     link.classList.remove('active');
-                    if (link.getAttribute('href').includes(currentActive)) {
+                    // Special handling for "Interests & Gallery" link as its ID is different from the section ID
+                    if (link.getAttribute('href') === '#interests-gallery' && currentActive === 'interests-gallery') {
+                        link.classList.add('active');
+                    } else if (link.getAttribute('href').includes(currentActive) && currentActive !== 'interests-gallery') {
                         link.classList.add('active');
                     }
                 });
@@ -293,6 +315,47 @@
             window.addEventListener('scroll', highlightNavLink);
             window.addEventListener('resize', highlightNavLink);
             highlightNavLink(); // Initial call on load
+
+            // Gallery Upload Functionality
+            const galleryUploadInput = document.getElementById('gallery-upload');
+            const galleryPreviewGrid = document.getElementById('gallery-preview');
+
+            galleryUploadInput.addEventListener('change', (event) => {
+                const files = event.target.files;
+                if (files.length === 0) return;
+
+                Array.from(files).forEach(file => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const previewItem = document.createElement('div');
+                        previewItem.classList.add('gallery-item');
+
+                        const fileName = document.createElement('p');
+                        fileName.classList.add('file-name');
+                        fileName.textContent = file.name;
+
+                        if (file.type.startsWith('image/')) {
+                            const img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.alt = file.name;
+                            previewItem.appendChild(img);
+                        } else {
+                            // For non-image files, show a generic icon and file name
+                            const fileIcon = document.createElement('i');
+                            fileIcon.classList.add('fas', 'fa-file', 'file-icon'); // Generic file icon
+                            if (file.type.includes('pdf')) {
+                                fileIcon.classList.add('fa-file-pdf');
+                            } else if (file.type.includes('word') || file.type.includes('document')) {
+                                fileIcon.classList.add('fa-file-word');
+                            }
+                            previewItem.appendChild(fileIcon);
+                        }
+                        previewItem.appendChild(fileName);
+                        galleryPreviewGrid.appendChild(previewItem);
+                    };
+                    reader.readAsDataURL(file);
+                });
+            });
         });
     </script>
 </body>
