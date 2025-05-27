@@ -22,7 +22,12 @@
 /* 2. Body styles - The core of the minimalist background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
-    background-color: #f8f8f8; /* Very soft, light grey for the overall page background */
+    /* Updated: Subtle, light background inspired by goodmeat.co */
+    background-color: #fcfcfc; /* A very light, almost white base */
+    background-image: radial-gradient(circle at 1% 1%, rgba(0,0,0,0.02) 1%, transparent 1%),
+                      radial-gradient(circle at 99% 99%, rgba(0,0,0,0.02) 1%, transparent 1%);
+    background-size: 200px 200px; /* Control the size of the gradient circles */
+    background-repeat: repeat; /* Repeat the pattern */
     color: #333333; /* Default dark grey text for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
@@ -30,7 +35,7 @@ body {
     flex-direction: column;
     overflow-x: hidden; /* Prevent horizontal scroll on mobile */
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
-    position: relative; /* Needed for any potential future background effects */
+    position: relative;
     z-index: 1; /* Ensure content is above background */
 }
 
