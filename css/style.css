@@ -23,7 +23,7 @@
 /* 2. Body styles - The core of the minimalist background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
-    background-color: #000000; /* True black background */
+    background-color: #0A0A0A; /* Very dark grey for a simplitics theme */
     /* Removed background-image and its related properties */
     color: #FFFFFF; /* White text for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
@@ -143,7 +143,7 @@ nav.main-nav a.nav-link.active {
 
 /* 5. Hero Section: Prominent introductory banner */
 .hero-section {
-    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%); /* Darker, smoother gradient */
+    background: #0A0A0A; /* Solid very dark grey for simplicity */
     padding: 140px 20px; /* More vertical padding */
     text-align: center;
     color: #FFFFFF;
