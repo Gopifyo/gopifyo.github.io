@@ -1,11 +1,11 @@
 /*
  * Complete CSS Code for a Professional, Minimalist Personal Website
- * Inspired by a "Graphic Black" theme with vibrant accents and sophisticated feel (like GOOD Meat).
+ * High Contrast Black & White Theme.
  *
  * This code includes:
  * - A CSS reset for consistent styling across browsers.
- * - A very dark, almost black background for the entire page with subtle animation.
- * - Dark grey content containers and cards with vibrant electric blue accents.
+ * - A true black background for the entire page.
+ * - Dark grey content containers and cards with white accents.
  * - Enhanced shadows and transitions for a premium, futuristic look.
  * - Styles for header, navigation, sections, profile image, and footer.
  * - Basic responsiveness for mobile devices.
@@ -17,14 +17,13 @@
     padding: 0;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     -webkit-font-smoothing: antialiased; /* Smoother font rendering */
-    -moz-osx-font-smoothing: grayscale; /* Smoother font rendering */
+    -moz-osx-osx-font-smoothing: grayscale; /* Smoother font rendering */
 }
 
 /* 2. Body styles - The core of the minimalist background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
     background-color: #000000; /* True black background */
-    /* Removed background-image and its related properties */
     color: #FFFFFF; /* White text for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
@@ -34,11 +33,7 @@ body {
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
     position: relative;
     z-index: 1; /* Ensure content is above background */
-    /* Removed backgroundShift animation */
 }
-
-/* Removed @keyframes backgroundShift as it's no longer used */
-
 
 /* Custom Scrollbar (Webkit browsers) */
 ::-webkit-scrollbar {
