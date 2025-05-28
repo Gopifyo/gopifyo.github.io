@@ -257,7 +257,7 @@ nav.main-nav a.nav-link.active {
     padding-left: 25px; /* More padding */
     font-weight: 700;
     font-size: 2.5rem; /* Larger heading font size */
-    letter-spacing: -0.03em; /* Tighter letter spacing */
+    letter-spacing: -0.05em; /* Tighter letter spacing */
     text-shadow: 0 0 10px rgba(255,255,255,0.1); /* Subtle white heading glow */
 }
 
@@ -686,44 +686,9 @@ nav.main-nav a.nav-link.active {
     border: 1px solid #444444;
 }
 
-.interests-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* More gap */
-    justify-content: center;
-    margin-top: 0;
-}
+/* Removed .interests-grid and .interest-item styling as content is removed from HTML */
 
-.interest-item {
-    background-color: #222222; /* Darker grey for interest items */
-    color: #FFFFFF; /* White */
-    padding: 18px 30px; /* More padding */
-    border-radius: 10px;
-    font-size: 1.1rem; /* Slightly larger font size */
-    font-weight: 500;
-    border: 1px solid #555555;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 55px; /* Taller items */
-    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
-}
-
-.interest-item:hover {
-    background-color: #333333; /* Slightly lighter on hover */
-    transform: translateY(-5px); /* More pronounced lift */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-}
-
-/* Gallery Specific Styles */
-.gallery-description {
-    font-size: 1.1rem; /* Slightly larger description */
-    color: #CCCCCC; /* Light grey */
-    margin-bottom: 25px; /* More margin */
-    text-align: center;
-}
+/* Removed .gallery-description styling as content is removed from HTML */
 
 .gallery-preview-grid {
     display: grid;
@@ -765,18 +730,8 @@ nav.main-nav a.nav-link.active {
     border-radius: 5px;
 }
 
-.gallery-item .file-icon {
-    font-size: 3.5rem; /* Larger icon */
-    color: #FFFFFF; /* White */
-    margin-bottom: 12px;
-}
+/* Removed .gallery-item .file-icon and .gallery-item .file-name styling as content is removed from HTML */
 
-.gallery-item .file-name {
-    font-size: 0.9rem; /* Slightly larger file name */
-    color: #CCCCCC; /* Light grey */
-    word-break: break-all;
-    padding: 0 5px;
-}
 
 /* Horizontal layout for Interests & Gallery on larger screens */
 @media (min-width: 769px) {
