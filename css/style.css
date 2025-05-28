@@ -24,13 +24,7 @@
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
     background-color: #000000; /* True black background */
-    /* Subtle graphic pattern for the background - refined for more depth */
-    background-image: radial-gradient(circle at 1% 1%, rgba(255,255,255,0.02) 1%, transparent 1%),
-                      radial-gradient(circle at 99% 99%, rgba(255,255,255,0.02) 1%, transparent 1%),
-                      linear-gradient(45deg, rgba(255,215,0,0.01) 0%, rgba(255,215,0,0.005) 50%, transparent 100%); /* Golden hue for pattern */
-    background-size: 250px 250px, 250px 250px, 100% 100%; /* Slightly larger pattern */
-    background-repeat: repeat, repeat, no-repeat;
-    background-position: 0 0, 100% 100%, 0 0;
+    /* Removed background-image and its related properties */
     color: #FFFFFF; /* White text for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
@@ -40,14 +34,11 @@ body {
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
     position: relative;
     z-index: 1; /* Ensure content is above background */
-    animation: backgroundShift 25s linear infinite alternate; /* Slower, smoother animation */
+    /* Removed backgroundShift animation */
 }
 
-@keyframes backgroundShift {
-    0% { background-position: 0% 0%, 100% 100%, 0 0; }
-    50% { background-position: 5% 5%, 95% 95%, 0 0; }
-    100% { background-position: 0% 0%, 100% 100%, 0 0; }
-}
+/* Removed @keyframes backgroundShift as it's no longer used */
+
 
 /* Custom Scrollbar (Webkit browsers) */
 ::-webkit-scrollbar {
@@ -936,7 +927,6 @@ footer.main-footer {
     text-align: center;
     padding: 40px 0; /* More padding */
     color: #888888; /* Softer grey */
-    font-size: 1rem; /* Slightly larger font size */
     background-color: #111111; /* Matches body/header background */
     border-top: 1px solid #333333;
     width: 100%;
@@ -1176,7 +1166,7 @@ footer.main-footer {
     }
 
     .gallery-item .file-icon {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .contact-details {
