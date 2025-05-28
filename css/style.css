@@ -120,7 +120,7 @@ nav.main-nav a.nav-link::after {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -8px;
+    bottom: -8px; /* Lower underline */
     left: 0;
     background-color: #FFFFFF; /* White */
     transition: width 0.3s ease;
@@ -257,7 +257,7 @@ nav.main-nav a.nav-link.active {
     padding-left: 25px; /* More padding */
     font-weight: 700;
     font-size: 2.5rem; /* Larger heading font size */
-    letter-spacing: -0.05em; /* Tighter letter spacing */
+    letter-spacing: -0.03em; /* Tighter letter spacing */
     text-shadow: 0 0 10px rgba(255,255,255,0.1); /* Subtle white heading glow */
 }
 
@@ -1092,19 +1092,9 @@ footer.main-footer {
         gap: 40px;
     }
 
-    .interests-area h3, .gallery-area h3 {
-        font-size: 1.5rem;
-    }
+    /* Removed .interests-area h3, .gallery-area h3 as they are no longer needed */
 
-    .interests-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 15px;
-    }
-
-    .interest-item {
-        padding: 15px 22px;
-        font-size: 1rem;
-    }
+    /* Removed .interests-grid and .interest-item styling as content is removed from HTML */
 
     .gallery-preview-grid {
         grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
@@ -1115,9 +1105,7 @@ footer.main-footer {
         height: 140px;
     }
 
-    .gallery-item .file-icon {
-        font-size: 2.5rem;
-    }
+    /* Removed .gallery-item .file-icon and .gallery-item .file-name styling as content is removed from HTML */
 
     .contact-details {
         grid-template-columns: 1fr;
@@ -1200,7 +1188,7 @@ footer.main-footer {
         font-size: 0.7rem;
     }
     .experience-role, .experience-org-duration, .experience-description,
-    .interests-grid .interest-item, .contact-details p {
+    .contact-details p {
         font-size: 0.95rem;
     }
     .timeline-content {
@@ -1212,9 +1200,7 @@ footer.main-footer {
     .gallery-item {
         height: 120px;
     }
-    .gallery-item .file-icon {
-        font-size: 2.5rem;
-    }
+    /* Removed .gallery-item .file-icon and .gallery-item .file-name styling as content is removed from HTML */
     .contact-details {
         grid-template-columns: 1fr;
     }
