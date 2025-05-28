@@ -23,15 +23,15 @@
 /* 2. Body styles - The core of the minimalist background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
-    background-color: #0a0a0a; /* Very dark grey, almost black */
+    background-color: #000000; /* True black background */
     /* Subtle graphic pattern for the background - refined for more depth */
-    background-image: radial-gradient(circle at 1% 1%, rgba(255,255,255,0.015) 1%, transparent 1%),
-                      radial-gradient(circle at 99% 99%, rgba(255,255,255,0.015) 1%, transparent 1%),
-                      linear-gradient(45deg, rgba(0,255,255,0.01) 0%, rgba(0,255,255,0.005) 50%, transparent 100%);
+    background-image: radial-gradient(circle at 1% 1%, rgba(255,255,255,0.02) 1%, transparent 1%),
+                      radial-gradient(circle at 99% 99%, rgba(255,255,255,0.02) 1%, transparent 1%),
+                      linear-gradient(45deg, rgba(255,215,0,0.01) 0%, rgba(255,215,0,0.005) 50%, transparent 100%); /* Golden hue for pattern */
     background-size: 250px 250px, 250px 250px, 100% 100%; /* Slightly larger pattern */
     background-repeat: repeat, repeat, no-repeat;
     background-position: 0 0, 100% 100%, 0 0;
-    color: #e0e0e0; /* Light grey text for readability */
+    color: #FFFFFF; /* White text for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
     display: flex;
@@ -55,29 +55,29 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a1a1a; /* Darker grey track */
+    background: #111111; /* Darker grey track */
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #00FFFF; /* Electric blue thumb */
+    background: #FFD700; /* Golden thumb */
     border-radius: 10px;
     transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #00CCCC; /* Darker electric blue on hover */
+    background: #DAA520; /* Darker golden on hover */
 }
 
 
 /* 3. Header styles - Clean, subtle top bar */
 header.main-header {
-    background-color: #1a1a1a; /* Darker grey for header */
-    color: #e0e0e0;
+    background-color: #111111; /* Slightly off-black for header */
+    color: #FFFFFF;
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* More noticeable but soft shadow, slightly elevated */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8); /* More noticeable but soft shadow, slightly elevated */
     border-bottom: 1px solid #333333;
     position: sticky;
     top: 0;
@@ -99,7 +99,7 @@ header.main-header .header-content-wrapper {
     font-size: 2rem; /* Slightly larger title */
     margin: 0;
     font-weight: 700;
-    color: #00FFFF; /* Electric blue for main title */
+    color: #FFD700; /* Golden for main title */
     letter-spacing: -0.03em; /* Tighter letter spacing for modern feel */
 }
 
@@ -113,7 +113,7 @@ nav.main-nav {
 }
 
 nav.main-nav a.nav-link {
-    color: #b0b0b0; /* Subtle grey for nav links */
+    color: #CCCCCC; /* Subtle grey for nav links */
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
@@ -123,7 +123,7 @@ nav.main-nav a.nav-link {
 }
 
 nav.main-nav a.nav-link:hover {
-    color: #00FFFF; /* Electric blue on hover */
+    color: #FFD700; /* Golden on hover */
     background-color: transparent;
     transform: translateY(-3px); /* More pronounced lift */
 }
@@ -136,7 +136,7 @@ nav.main-nav a.nav-link::after {
     height: 2px;
     bottom: -8px;
     left: 0;
-    background-color: #00FFFF; /* Electric blue */
+    background-color: #FFD700; /* Golden */
     transition: width 0.3s ease;
 }
 
@@ -146,17 +146,17 @@ nav.main-nav a.nav-link.active::after {
 }
 
 nav.main-nav a.nav-link.active {
-    color: #00FFFF; /* Electric blue */
+    color: #FFD700; /* Golden */
 }
 
 
 /* 5. Hero Section: Prominent introductory banner */
 .hero-section {
-    background: linear-gradient(135deg, #121212 0%, #202020 100%); /* Darker, smoother gradient */
+    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%); /* Darker, smoother gradient */
     padding: 140px 20px; /* More vertical padding */
     text-align: center;
-    color: #e0e0e0;
-    box-shadow: inset 0 -8px 30px rgba(0,0,0,0.3); /* Deeper inset shadow */
+    color: #FFFFFF;
+    box-shadow: inset 0 -8px 30px rgba(0,0,0,0.5); /* Deeper inset shadow */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -189,35 +189,35 @@ nav.main-nav a.nav-link.active {
     margin-bottom: 30px; /* Increased margin */
     line-height: 1.1;
     letter-spacing: -0.05em; /* Tighter for modern headings */
-    color: #00FFFF; /* Electric blue */
-    text-shadow: 0 0 15px rgba(0,255,255,0.3), 0 0 5px rgba(0,255,255,0.2); /* Subtle glow effect */
+    color: #FFD700; /* Golden */
+    text-shadow: 0 0 15px rgba(255,215,0,0.3), 0 0 5px rgba(255,215,0,0.2); /* Subtle golden glow effect */
 }
 
 .hero-subtitle {
     font-size: 1.8rem; /* Larger subtitle */
     font-weight: 300;
     margin-bottom: 60px; /* Increased margin */
-    color: #b0b0b0; /* Lighter grey */
+    color: #CCCCCC; /* Lighter grey */
 }
 
 .cta-button {
     display: inline-flex;
     align-items: center;
-    background-color: #00FFFF; /* Electric blue */
-    color: #1a1a1a; /* Dark text on bright button */
+    background-color: #FFD700; /* Golden */
+    color: #000000; /* Black text on bright button */
     padding: 18px 45px; /* Larger padding */
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.3rem; /* Larger font size */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 25px rgba(0,255,255,0.4); /* More pronounced shadow */
+    box-shadow: 0 8px 25px rgba(255,215,0,0.4); /* More pronounced golden shadow */
 }
 
 .cta-button:hover {
-    background-color: #00CCCC; /* Darker blue */
+    background-color: #DAA520; /* Darker golden */
     transform: translateY(-6px); /* More pronounced lift */
-    box-shadow: 0 15px 40px rgba(0,255,255,0.6); /* Even stronger shadow on hover */
+    box-shadow: 0 15px 40px rgba(255,215,0,0.6); /* Even stronger golden shadow on hover */
 }
 
 
@@ -227,8 +227,8 @@ nav.main-nav a.nav-link.active {
     width: 90%;
     margin: 80px auto; /* More margin around the container */
     padding: 50px 60px; /* Increased padding */
-    background-color: #1a1a1a; /* Matches header background */
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6); /* Deeper, more diffused shadow */
+    background-color: #111111; /* Matches header background */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8); /* Deeper, more diffused shadow */
     border-radius: 18px; /* Slightly larger border-radius */
     box-sizing: border-box;
     flex-grow: 1;
@@ -246,7 +246,7 @@ nav.main-nav a.nav-link.active {
     right: 0;
     bottom: 0;
     border-radius: 18px;
-    border: 1px solid rgba(0, 255, 255, 0.1); /* Subtle blue glow */
+    border: 1px solid rgba(255, 215, 0, 0.1); /* Subtle golden glow */
     pointer-events: none;
 }
 
@@ -254,7 +254,7 @@ nav.main-nav a.nav-link.active {
 /* 7. Section styles */
 .content-section {
     padding: 60px 0; /* More padding between sections */
-    border-bottom: 1px solid #2a2a2a; /* Darker, subtle border for separation */
+    border-bottom: 1px solid #222222; /* Darker, subtle border for separation */
 }
 
 /* Remove border from the last section within the container */
@@ -266,13 +266,13 @@ nav.main-nav a.nav-link.active {
 /* 8. Section heading styles */
 .section-heading {
     margin-bottom: 40px; /* More margin */
-    color: white; /* Changed to white */
-    border-left: 6px solid #00FFFF; /* Thicker electric blue border */
+    color: white; /* White */
+    border-left: 6px solid #FFD700; /* Thicker golden border */
     padding-left: 25px; /* More padding */
     font-weight: 700;
     font-size: 2.5rem; /* Larger heading font size */
     letter-spacing: -0.03em; /* Tighter letter spacing */
-    text-shadow: 0 0 10px rgba(0,255,255,0.1); /* Subtle heading glow */
+    text-shadow: 0 0 10px rgba(255,215,0,0.1); /* Subtle golden heading glow */
 }
 
 /* 9. About Section Layout */
@@ -294,14 +294,14 @@ nav.main-nav a.nav-link.active {
     border-radius: 50%;
     display: block;
     object-fit: cover;
-    border: 5px solid #00FFFF; /* Electric blue border */
-    box-shadow: 0 8px 20px rgba(0,255,255,0.4); /* More pronounced shadow */
+    border: 5px solid #FFD700; /* Golden border */
+    box-shadow: 0 8px 20px rgba(255,215,0,0.4); /* More pronounced golden shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img-placeholder:hover {
     transform: scale(1.08); /* More pronounced scale */
-    box-shadow: 0 15px 35px rgba(0,255,255,0.6); /* Stronger shadow on hover */
+    box-shadow: 0 15px 35px rgba(255,215,0,0.6); /* Stronger golden shadow on hover */
 }
 
 .about-text {
@@ -311,7 +311,7 @@ nav.main-nav a.nav-link.active {
 .about-text p {
     font-size: 1.2rem; /* Slightly larger text */
     line-height: 1.8; /* Increased line spacing */
-    color: #cccccc; /* Light grey */
+    color: #CCCCCC; /* Light grey */
     margin-bottom: 1.5em; /* More margin */
 }
 
@@ -328,10 +328,10 @@ nav.main-nav a.nav-link.active {
 }
 
 .portfolio-item {
-    background-color: #222222; /* Darker grey for portfolio items */
+    background-color: #1A1A1A; /* Darker grey for portfolio items */
     padding: 30px; /* More padding */
     border-radius: 12px; /* Slightly larger border-radius */
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4); /* Deeper shadow */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6); /* Deeper shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -340,8 +340,8 @@ nav.main-nav a.nav-link.active {
 
 .portfolio-item:hover {
     transform: translateY(-10px); /* More pronounced lift */
-    box-shadow: 0 15px 40px rgba(0,0,0,0.6); /* Stronger shadow on hover */
-    background-color: #282828; /* Slightly lighter on hover */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.8); /* Stronger shadow on hover */
+    background-color: #222222; /* Slightly lighter on hover */
 }
 
 .portfolio-img {
@@ -355,14 +355,14 @@ nav.main-nav a.nav-link.active {
 
 .portfolio-title {
     font-size: 1.6rem; /* Larger title */
-    color: #f0f0f0; /* Off-white */
+    color: #FFFFFF; /* White */
     margin-bottom: 12px;
     font-weight: 600;
 }
 
 .portfolio-description {
     font-size: 1.05rem; /* Slightly larger description */
-    color: #b0b0b0; /* Lighter grey */
+    color: #CCCCCC; /* Light grey */
     line-height: 1.6;
     flex-grow: 1;
     margin-bottom: 25px;
@@ -371,7 +371,7 @@ nav.main-nav a.nav-link.active {
 .item-link {
     display: inline-flex;
     align-items: center;
-    color: #00FFFF; /* Electric blue */
+    color: #FFD700; /* Golden */
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem; /* Slightly larger font size */
@@ -379,7 +379,7 @@ nav.main-nav a.nav-link.active {
 }
 
 .item-link:hover {
-    color: #00CCCC; /* Darker blue on hover */
+    color: #DAA520; /* Darker golden on hover */
     transform: translateX(8px); /* More pronounced slide */
 }
 
@@ -397,18 +397,18 @@ nav.main-nav a.nav-link.active {
 .publication-card {
     display: flex;
     flex-direction: column;
-    background-color: #222222; /* Darker grey for cards */
+    background-color: #1A1A1A; /* Darker grey for cards */
     padding: 30px; /* More padding */
     border-radius: 12px; /* Slightly larger border-radius */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Deeper shadow */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Deeper shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     border: 1px solid #444444; /* Subtle border */
 }
 
 .publication-card:hover {
     transform: translateY(-8px); /* More pronounced lift */
-    box-shadow: 0 12px 30px rgba(0,0,0,0.5); /* Stronger shadow on hover */
-    background-color: #282828; /* Slightly lighter on hover */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7); /* Stronger shadow on hover */
+    background-color: #222222; /* Slightly lighter on hover */
 }
 
 .publication-details {
@@ -419,14 +419,14 @@ nav.main-nav a.nav-link.active {
 .publication-title {
     font-size: 1.3rem; /* Larger title */
     font-weight: 600;
-    color: #f0f0f0; /* Off-white */
+    color: #FFFFFF; /* White */
     display: block;
     margin-bottom: 10px;
 }
 
 .publication-meta {
     font-size: 0.95rem; /* Slightly larger meta text */
-    color: #b0b0b0; /* Lighter grey */
+    color: #CCCCCC; /* Light grey */
     line-height: 1.6;
 }
 
@@ -437,8 +437,8 @@ nav.main-nav a.nav-link.active {
 .publication-link {
     display: inline-flex;
     align-items: center;
-    background-color: #00FFFF; /* Electric blue */
-    color: #1a1a1a; /* Dark text for contrast */
+    background-color: #FFD700; /* Golden */
+    color: #000000; /* Black text for contrast */
     padding: 12px 22px; /* Larger padding */
     border-radius: 8px; /* Slightly larger border-radius */
     text-decoration: none;
@@ -446,13 +446,13 @@ nav.main-nav a.nav-link.active {
     font-size: 0.95rem; /* Slightly larger font size */
     transition: background-color 0.3s ease, transform 0.2s ease;
     flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(0,255,255,0.2);
+    box-shadow: 0 4px 10px rgba(255,215,0,0.2); /* Golden shadow */
 }
 
 .publication-link:hover {
-    background-color: #00CCCC; /* Darker blue on hover */
+    background-color: #DAA520; /* Darker golden on hover */
     transform: translateY(-3px); /* More pronounced lift */
-    box-shadow: 0 8px 15px rgba(0,255,255,0.3);
+    box-shadow: 0 8px 15px rgba(255,215,0,0.3);
 }
 
 
@@ -460,10 +460,10 @@ nav.main-nav a.nav-link.active {
 #skills {
     position: relative;
     padding: 60px 0;
-    background: radial-gradient(circle at center, #1a1a1a 0%, #2a2a2a 70%, #1a1a1a 100%);
+    background: radial-gradient(circle at center, #111111 0%, #222222 70%, #111111 100%); /* Darker radial gradient */
     border-radius: 18px; /* Consistent border-radius */
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.5); /* Deeper shadow */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7); /* Deeper shadow */
     margin-top: 80px; /* More margin */
     display: flex;
     flex-direction: column;
@@ -478,8 +478,8 @@ nav.main-nav a.nav-link.active {
 }
 
 #skills h2 {
-    color: white; /* Changed to white */
-    border-left-color: #00FFFF; /* Electric blue border remains */
+    color: white; /* White */
+    border-left-color: #FFD700; /* Golden border */
     margin-bottom: 50px; /* More margin */
 }
 
@@ -495,8 +495,8 @@ nav.main-nav a.nav-link.active {
 }
 
 .skill-tag {
-    background-color: #222222; /* Darker grey for skill tags */
-    color: #e0e0e0; /* Light grey */
+    background-color: #1A1A1A; /* Darker grey for skill tags */
+    color: #FFFFFF; /* White */
     padding: 20px 25px; /* More padding */
     border-radius: 10px;
     font-size: 1.1rem; /* Slightly larger font size */
@@ -504,7 +504,7 @@ nav.main-nav a.nav-link.active {
     border: 1px solid #444444;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     cursor: default;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Deeper shadow */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* Deeper shadow */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -516,9 +516,9 @@ nav.main-nav a.nav-link.active {
 }
 
 .skill-tag:hover {
-    background-color: #333333; /* Slightly lighter on hover */
+    background-color: #222222; /* Slightly lighter on hover */
     transform: translateY(-10px); /* More pronounced lift */
-    box-shadow: 0 12px 30px rgba(0,0,0,0.5); /* Stronger shadow on hover */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7); /* Stronger shadow on hover */
 }
 
 /* Skill Level Indicator (Circle Measuring Wheel Concept) */
@@ -530,27 +530,27 @@ nav.main-nav a.nav-link.active {
     width: 35px; /* Slightly larger circle */
     height: 35px;
     border-radius: 50%;
-    background-color: #424242; /* Dark grey for empty part of circle */
+    background-color: #333333; /* Dark grey for empty part of circle */
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.85rem; /* Slightly larger font */
     font-weight: 700;
-    color: #e0e0e0; /* Light grey text for percentages */
-    box-shadow: inset 0 0 0 2px rgba(0,0,0,0.2);
+    color: #FFFFFF; /* White text for percentages */
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.1); /* Subtle white inner shadow */
     transition: background 0.3s ease;
 }
 
 /* Data-percentage based styling for the "measuring wheel" effect */
-/* Using shades of electric blue for the percentages */
-.skill-tag[data-percentage="100"]::before { background: conic-gradient(#00FFFF 0%, #00FFFF 100%, #424242 100%); color: #1a1a1a; }
-.skill-tag[data-percentage="95"]::before { background: conic-gradient(#33FFFF 0%, #33FFFF 95%, #424242 95%); }
-.skill-tag[data-percentage="90"]::before { background: conic-gradient(#66FFFF 0%, #66FFFF 90%, #424242 90%); }
-.skill-tag[data-percentage="85"]::before { background: conic-gradient(#99FFFF 0%, #99FFFF 85%, #424242 85%); }
-.skill-tag[data-percentage="80"]::before { background: conic-gradient(#CCFFFF 0%, #CCFFFF 80%, #424242 80%); }
-.skill-tag[data-percentage="75"]::before { background: conic-gradient(#EEFFFF 0%, #EEFFFF 75%, #424242 75%); }
-.skill-tag[data-percentage="70"]::before { background: conic-gradient(#F8FFFF 0%, #F8FFFF 70%, #424242 70%); }
+/* Using shades of golden for the percentages */
+.skill-tag[data-percentage="100"]::before { background: conic-gradient(#FFD700 0%, #FFD700 100%, #333333 100%); color: #000000; }
+.skill-tag[data-percentage="95"]::before { background: conic-gradient(#FFD700 0%, #FFD700 95%, #333333 95%); }
+.skill-tag[data-percentage="90"]::before { background: conic-gradient(#FFD700 0%, #FFD700 90%, #333333 90%); }
+.skill-tag[data-percentage="85"]::before { background: conic-gradient(#FFD700 0%, #FFD700 85%, #333333 85%); }
+.skill-tag[data-percentage="80"]::before { background: conic-gradient(#FFD700 0%, #FFD700 80%, #333333 80%); }
+.skill-tag[data-percentage="75"]::before { background: conic-gradient(#FFD700 0%, #FFD700 75%, #333333 75%); }
+.skill-tag[data-percentage="70"]::before { background: conic-gradient(#FFD700 0%, #FFD700 70%, #333333 70%); }
 
 /* Text inside skill tag */
 .skill-tag span {
@@ -586,24 +586,24 @@ nav.main-nav a.nav-link.active {
 }
 
 .timeline-dot {
-    background-color: #00FFFF; /* Electric blue */
+    background-color: #FFD700; /* Golden */
     width: 16px; /* Slightly larger dot */
     height: 16px;
     border-radius: 50%;
-    border: 3px solid #1a1a1a; /* Matches container background */
+    border: 3px solid #000000; /* Black border */
     position: absolute;
     left: 50%;
     top: 35px; /* Adjusted position */
     transform: translateX(-50%);
     z-index: 1;
-    box-shadow: 0 0 0 6px rgba(0,255,255,0.3); /* Larger, more pronounced halo */
+    box-shadow: 0 0 0 6px rgba(255,215,0,0.3); /* Larger, more pronounced golden halo */
 }
 
 .timeline-content {
-    background-color: #222222; /* Darker grey for content cards */
+    background-color: #1A1A1A; /* Darker grey for content cards */
     padding: 30px; /* More padding */
     border-radius: 12px; /* Slightly larger border-radius */
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4); /* Deeper shadow */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6); /* Deeper shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     border: 1px solid #444444; /* Subtle border */
     width: calc(50% - 50px); /* Adjusted width */
@@ -622,8 +622,8 @@ nav.main-nav a.nav-link.active {
 
 .timeline-content:hover {
     transform: translateY(-8px); /* More pronounced lift */
-    box-shadow: 0 12px 30px rgba(0,0,0,0.5); /* Stronger shadow on hover */
-    background-color: #282828; /* Slightly lighter on hover */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.8); /* Stronger shadow on hover */
+    background-color: #222222; /* Slightly lighter on hover */
 }
 
 .experience-header {
@@ -636,13 +636,13 @@ nav.main-nav a.nav-link.active {
 
 .experience-role {
     font-size: 1.35rem; /* Larger role font */
-    color: #f0f0f0; /* Off-white */
+    color: #FFFFFF; /* White */
     font-weight: 700;
 }
 
 .experience-org-duration {
     font-size: 1rem; /* Slightly larger */
-    color: #b0b0b0; /* Lighter grey */
+    color: #CCCCCC; /* Lighter grey */
     font-weight: 500;
     margin-left: 20px; /* More margin */
     flex-shrink: 0;
@@ -650,16 +650,16 @@ nav.main-nav a.nav-link.active {
 
 .experience-description {
     font-size: 1.05rem; /* Slightly larger description */
-    color: #cccccc; /* Light grey */
+    color: #CCCCCC; /* Light grey */
     line-height: 1.7;
 }
 
 /* 14. Combined Interests and Gallery Section - NEW ARRANGEMENT */
 #interests-gallery {
     padding: 60px; /* More padding */
-    background-color: #1a1a1a; /* Matches header/container background */
+    background-color: #111111; /* Matches header/container background */
     border-radius: 18px; /* Consistent border-radius */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4); /* Deeper shadow */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Deeper shadow */
     margin-top: 80px; /* More margin */
     display: flex;
     flex-direction: column;
@@ -668,8 +668,8 @@ nav.main-nav a.nav-link.active {
 }
 
 #interests-gallery h2 {
-    color: white; /* Changed to white */
-    border-left-color: #00FFFF; /* Electric blue border remains */
+    color: white; /* White */
+    border-left-color: #FFD700; /* Golden border (though not used due to text-align: center) */
     margin-bottom: 35px; /* More margin */
     text-align: center;
     border-left: none;
@@ -680,7 +680,7 @@ nav.main-nav a.nav-link.active {
     display: block;
     width: 100px; /* Wider underline */
     height: 4px; /* Thicker underline */
-    background-color: #00FFFF; /* Electric blue */
+    background-color: #FFD700; /* Golden */
     margin: 18px auto 0 auto; /* More margin */
     border-radius: 2px;
 }
@@ -693,10 +693,10 @@ nav.main-nav a.nav-link.active {
 
 .interests-area, .gallery-area {
     flex: 1;
-    background-color: #222222; /* Darker grey for sub-areas */
+    background-color: #1A1A1A; /* Darker grey for sub-areas */
     padding: 35px; /* More padding */
     border-radius: 12px; /* Consistent border-radius */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Deeper shadow */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Deeper shadow */
     border: 1px solid #444444;
 }
 
@@ -709,11 +709,11 @@ nav.main-nav a.nav-link.active {
 }
 
 .interest-item {
-    background-color: #424242; /* Darker grey for interest items */
+    background-color: #222222; /* Darker grey for interest items */
+    color: #FFFFFF; /* White */
     padding: 18px 30px; /* More padding */
     border-radius: 10px;
     font-size: 1.1rem; /* Slightly larger font size */
-    color: #cccccc; /* Light grey */
     font-weight: 500;
     border: 1px solid #555555;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
@@ -722,19 +722,19 @@ nav.main-nav a.nav-link.active {
     justify-content: center;
     text-align: center;
     min-height: 55px; /* Taller items */
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
 }
 
 .interest-item:hover {
-    background-color: #555555; /* Slightly lighter on hover */
+    background-color: #333333; /* Slightly lighter on hover */
     transform: translateY(-5px); /* More pronounced lift */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 /* Gallery Specific Styles */
 .gallery-description {
     font-size: 1.1rem; /* Slightly larger description */
-    color: #b0b0b0; /* Lighter grey */
+    color: #CCCCCC; /* Light grey */
     margin-bottom: 25px; /* More margin */
     text-align: center;
 }
@@ -749,7 +749,7 @@ nav.main-nav a.nav-link.active {
 }
 
 .gallery-item {
-    background-color: #424242; /* Darker grey for gallery items */
+    background-color: #222222; /* Darker grey for gallery items */
     border: 1px solid #555555;
     border-radius: 10px; /* Slightly larger border-radius */
     padding: 12px; /* More padding */
@@ -761,7 +761,7 @@ nav.main-nav a.nav-link.active {
     height: 160px; /* Taller items */
     overflow: hidden;
     position: relative;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
     text-decoration: none;
     color: inherit;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -769,7 +769,7 @@ nav.main-nav a.nav-link.active {
 
 .gallery-item:hover {
     transform: translateY(-5px); /* More pronounced lift */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 .gallery-item img {
@@ -781,13 +781,13 @@ nav.main-nav a.nav-link.active {
 
 .gallery-item .file-icon {
     font-size: 3.5rem; /* Larger icon */
-    color: #00FFFF; /* Electric blue */
+    color: #FFD700; /* Golden */
     margin-bottom: 12px;
 }
 
 .gallery-item .file-name {
     font-size: 0.9rem; /* Slightly larger file name */
-    color: #b0b0b0; /* Lighter grey */
+    color: #CCCCCC; /* Light grey */
     word-break: break-all;
     padding: 0 5px;
 }
@@ -803,7 +803,7 @@ nav.main-nav a.nav-link.active {
 /* 15. Contact Section */
 .contact-intro {
     font-size: 1.2rem; /* Slightly larger intro */
-    color: #cccccc;
+    color: #CCCCCC;
     margin-bottom: 40px; /* More margin */
     text-align: center;
 }
@@ -816,26 +816,26 @@ nav.main-nav a.nav-link.active {
 }
 
 .contact-details p {
-    background-color: #222222; /* Darker grey for contact links */
+    background-color: #1A1A1A; /* Darker grey for contact links */
     padding: 18px 25px; /* More padding */
     border-radius: 10px; /* Consistent border-radius */
     font-size: 1.15rem; /* Slightly larger font size */
-    color: #cccccc; /* Light grey */
+    color: #FFFFFF; /* White */
     display: flex;
     align-items: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
     border: 1px solid #444444;
 }
 
 .contact-details p:hover {
     transform: translateY(-5px); /* More pronounced lift */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-    background-color: #282828; /* Slightly lighter on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    background-color: #222222; /* Slightly lighter on hover */
 }
 
 .contact-details p i {
-    color: #00FFFF; /* Electric blue */
+    color: #FFD700; /* Golden */
     font-size: 1.5rem; /* Larger icon */
     width: 35px; /* Wider icon area */
     text-align: center;
@@ -843,7 +843,7 @@ nav.main-nav a.nav-link.active {
 }
 
 .contact-details p .contact-link {
-    color: #00FFFF; /* Electric blue */
+    color: #FFD700; /* Golden */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -851,18 +851,18 @@ nav.main-nav a.nav-link.active {
 }
 
 .contact-details p .contact-link:hover {
-    color: #00CCCC; /* Darker blue on hover */
+    color: #DAA520; /* Darker golden on hover */
     text-decoration: underline;
 }
 
 
 /* 16. Call to Action Section */
 .cta-section {
-    background-color: #1a1a1a; /* Matches header/container background */
-    color: #e0e0e0;
+    background-color: #111111; /* Matches header/container background */
+    color: #FFFFFF;
     border-radius: 18px; /* Consistent border-radius */
     margin-top: 80px; /* More margin */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4); /* Deeper shadow */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Deeper shadow */
     padding: 50px 40px; /* More padding */
     display: flex;
     flex-direction: column;
@@ -874,8 +874,8 @@ nav.main-nav a.nav-link.active {
 }
 
 .cta-section h2 {
-    color: white; /* Changed to white */
-    border-left-color: #00FFFF; /* Electric blue border remains */
+    color: white; /* White */
+    border-left-color: #FFD700; /* Golden border (though not used due to text-align: center) */
     margin-bottom: 20px; /* More margin */
     font-size: 2.2rem; /* Larger heading */
 }
@@ -887,25 +887,27 @@ nav.main-nav a.nav-link.active {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.7;
-    color: #cccccc;
+    color: #CCCCCC;
 }
 
 .cta-section .cta-button {
-    background-color: #00FFFF; /* Electric blue */
-    color: #1a1a1a; /* Dark text for contrast */
+    display: inline-flex;
+    align-items: center;
+    background-color: #FFD700; /* Golden */
+    color: #000000; /* Black text for contrast */
     padding: 18px 45px; /* Larger padding */
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.3rem; /* Larger font size */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 25px rgba(0,255,255,0.4); /* More pronounced shadow */
+    box-shadow: 0 8px 25px rgba(255,215,0,0.4); /* More pronounced golden shadow */
 }
 
 .cta-section .cta-button:hover {
-    background-color: #00CCCC; /* Darker blue */
+    background-color: #DAA520; /* Darker golden */
     transform: translateY(-6px); /* More pronounced lift */
-    box-shadow: 0 15px 40px rgba(0,255,255,0.6); /* Even stronger shadow on hover */
+    box-shadow: 0 15px 40px rgba(255,215,0,0.6); /* Even stronger golden shadow on hover */
 }
 
 /* Horizontal layout for CTA on larger screens */
@@ -933,13 +935,13 @@ nav.main-nav a.nav-link.active {
 footer.main-footer {
     text-align: center;
     padding: 40px 0; /* More padding */
-    color: #999999; /* Softer grey */
+    color: #888888; /* Softer grey */
     font-size: 1rem; /* Slightly larger font size */
-    background-color: #1a1a1a; /* Matches body/header background */
+    background-color: #111111; /* Matches body/header background */
     border-top: 1px solid #333333;
     width: 100%;
     margin-top: auto;
-    box-shadow: 0 -4px 10px rgba(0,0,0,0.3); /* Deeper shadow */
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.5); /* Deeper shadow */
 }
 
 
