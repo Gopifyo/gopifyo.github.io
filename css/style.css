@@ -23,7 +23,7 @@
 /* 2. Body styles - The core of the minimalist background */
 body {
     font-family: 'Inter', sans-serif; /* Using Inter for a modern, clean look */
-    background-color: #0A0A0A; /* Very dark grey for a simplitics theme */
+    background-color: #000000; /* True black background */
     /* Removed background-image and its related properties */
     color: #FFFFFF; /* White text for readability */
     line-height: 1.7; /* Increased line spacing for better readability */
@@ -51,13 +51,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FFD700; /* Golden thumb */
+    background: #FFFFFF; /* White thumb for high contrast */
     border-radius: 10px;
     transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #DAA520; /* Darker golden on hover */
+    background: #CCCCCC; /* Lighter white on hover */
 }
 
 
@@ -90,7 +90,7 @@ header.main-header .header-content-wrapper {
     font-size: 2rem; /* Slightly larger title */
     margin: 0;
     font-weight: 700;
-    color: #FFD700; /* Golden for main title */
+    color: #FFFFFF; /* White for main title */
     letter-spacing: -0.03em; /* Tighter letter spacing for modern feel */
 }
 
@@ -114,7 +114,7 @@ nav.main-nav a.nav-link {
 }
 
 nav.main-nav a.nav-link:hover {
-    color: #FFD700; /* Golden on hover */
+    color: #FFFFFF; /* White on hover */
     background-color: transparent;
     transform: translateY(-3px); /* More pronounced lift */
 }
@@ -127,7 +127,7 @@ nav.main-nav a.nav-link::after {
     height: 2px;
     bottom: -8px;
     left: 0;
-    background-color: #FFD700; /* Golden */
+    background-color: #FFFFFF; /* White */
     transition: width 0.3s ease;
 }
 
@@ -137,7 +137,7 @@ nav.main-nav a.nav-link.active::after {
 }
 
 nav.main-nav a.nav-link.active {
-    color: #FFD700; /* Golden */
+    color: #FFFFFF; /* White */
 }
 
 
@@ -180,8 +180,8 @@ nav.main-nav a.nav-link.active {
     margin-bottom: 30px; /* Increased margin */
     line-height: 1.1;
     letter-spacing: -0.05em; /* Tighter for modern headings */
-    color: #FFD700; /* Golden */
-    text-shadow: 0 0 15px rgba(255,215,0,0.3), 0 0 5px rgba(255,215,0,0.2); /* Subtle golden glow effect */
+    color: #FFFFFF; /* White */
+    text-shadow: 0 0 15px rgba(255,255,255,0.3), 0 0 5px rgba(255,255,255,0.2); /* Subtle white glow effect */
 }
 
 .hero-subtitle {
@@ -194,7 +194,7 @@ nav.main-nav a.nav-link.active {
 .cta-button {
     display: inline-flex;
     align-items: center;
-    background-color: #FFD700; /* Golden */
+    background-color: #FFFFFF; /* White */
     color: #000000; /* Black text on bright button */
     padding: 18px 45px; /* Larger padding */
     border-radius: 50px;
@@ -202,13 +202,13 @@ nav.main-nav a.nav-link.active {
     font-weight: 600;
     font-size: 1.3rem; /* Larger font size */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 25px rgba(255,215,0,0.4); /* More pronounced golden shadow */
+    box-shadow: 0 8px 25px rgba(255,255,255,0.4); /* More pronounced white shadow */
 }
 
 .cta-button:hover {
-    background-color: #DAA520; /* Darker golden */
+    background-color: #CCCCCC; /* Darker white */
     transform: translateY(-6px); /* More pronounced lift */
-    box-shadow: 0 15px 40px rgba(255,215,0,0.6); /* Even stronger golden shadow on hover */
+    box-shadow: 0 15px 40px rgba(255,255,255,0.6); /* Even stronger white shadow on hover */
 }
 
 
@@ -237,7 +237,7 @@ nav.main-nav a.nav-link.active {
     right: 0;
     bottom: 0;
     border-radius: 18px;
-    border: 1px solid rgba(255, 215, 0, 0.1); /* Subtle golden glow */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white glow */
     pointer-events: none;
 }
 
@@ -258,12 +258,12 @@ nav.main-nav a.nav-link.active {
 .section-heading {
     margin-bottom: 40px; /* More margin */
     color: white; /* White */
-    border-left: 6px solid #FFD700; /* Thicker golden border */
+    border-left: 6px solid #FFFFFF; /* Thicker white border */
     padding-left: 25px; /* More padding */
     font-weight: 700;
     font-size: 2.5rem; /* Larger heading font size */
     letter-spacing: -0.03em; /* Tighter letter spacing */
-    text-shadow: 0 0 10px rgba(255,215,0,0.1); /* Subtle golden heading glow */
+    text-shadow: 0 0 10px rgba(255,255,255,0.1); /* Subtle white heading glow */
 }
 
 /* 9. About Section Layout */
@@ -285,14 +285,14 @@ nav.main-nav a.nav-link.active {
     border-radius: 50%;
     display: block;
     object-fit: cover;
-    border: 5px solid #FFD700; /* Golden border */
-    box-shadow: 0 8px 20px rgba(255,215,0,0.4); /* More pronounced golden shadow */
+    border: 5px solid #FFFFFF; /* White border */
+    box-shadow: 0 8px 20px rgba(255,255,255,0.4); /* More pronounced white shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img-placeholder:hover {
     transform: scale(1.08); /* More pronounced scale */
-    box-shadow: 0 15px 35px rgba(255,215,0,0.6); /* Stronger golden shadow on hover */
+    box-shadow: 0 15px 35px rgba(255,255,255,0.6); /* Stronger white shadow on hover */
 }
 
 .about-text {
@@ -362,7 +362,7 @@ nav.main-nav a.nav-link.active {
 .item-link {
     display: inline-flex;
     align-items: center;
-    color: #FFD700; /* Golden */
+    color: #FFFFFF; /* White */
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem; /* Slightly larger font size */
@@ -370,7 +370,7 @@ nav.main-nav a.nav-link.active {
 }
 
 .item-link:hover {
-    color: #DAA520; /* Darker golden on hover */
+    color: #CCCCCC; /* Darker white on hover */
     transform: translateX(8px); /* More pronounced slide */
 }
 
@@ -428,7 +428,7 @@ nav.main-nav a.nav-link.active {
 .publication-link {
     display: inline-flex;
     align-items: center;
-    background-color: #FFD700; /* Golden */
+    background-color: #FFFFFF; /* White */
     color: #000000; /* Black text for contrast */
     padding: 12px 22px; /* Larger padding */
     border-radius: 8px; /* Slightly larger border-radius */
@@ -437,13 +437,13 @@ nav.main-nav a.nav-link.active {
     font-size: 0.95rem; /* Slightly larger font size */
     transition: background-color 0.3s ease, transform 0.2s ease;
     flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(255,215,0,0.2); /* Golden shadow */
+    box-shadow: 0 4px 10px rgba(255,255,255,0.2); /* White shadow */
 }
 
 .publication-link:hover {
-    background-color: #DAA520; /* Darker golden on hover */
+    background-color: #CCCCCC; /* Darker white on hover */
     transform: translateY(-3px); /* More pronounced lift */
-    box-shadow: 0 8px 15px rgba(255,215,0,0.3);
+    box-shadow: 0 8px 15px rgba(255,255,255,0.3);
 }
 
 
@@ -470,7 +470,7 @@ nav.main-nav a.nav-link.active {
 
 #skills h2 {
     color: white; /* White */
-    border-left-color: #FFD700; /* Golden border */
+    border-left-color: #FFFFFF; /* White border */
     margin-bottom: 50px; /* More margin */
 }
 
@@ -534,14 +534,14 @@ nav.main-nav a.nav-link.active {
 }
 
 /* Data-percentage based styling for the "measuring wheel" effect */
-/* Using shades of golden for the percentages */
-.skill-tag[data-percentage="100"]::before { background: conic-gradient(#FFD700 0%, #FFD700 100%, #333333 100%); color: #000000; }
-.skill-tag[data-percentage="95"]::before { background: conic-gradient(#FFD700 0%, #FFD700 95%, #333333 95%); }
-.skill-tag[data-percentage="90"]::before { background: conic-gradient(#FFD700 0%, #FFD700 90%, #333333 90%); }
-.skill-tag[data-percentage="85"]::before { background: conic-gradient(#FFD700 0%, #FFD700 85%, #333333 85%); }
-.skill-tag[data-percentage="80"]::before { background: conic-gradient(#FFD700 0%, #FFD700 80%, #333333 80%); }
-.skill-tag[data-percentage="75"]::before { background: conic-gradient(#FFD700 0%, #FFD700 75%, #333333 75%); }
-.skill-tag[data-percentage="70"]::before { background: conic-gradient(#FFD700 0%, #FFD700 70%, #333333 70%); }
+/* Using shades of white for the percentages */
+.skill-tag[data-percentage="100"]::before { background: conic-gradient(#FFFFFF 0%, #FFFFFF 100%, #333333 100%); color: #000000; }
+.skill-tag[data-percentage="95"]::before { background: conic-gradient(#FFFFFF 0%, #FFFFFF 95%, #333333 95%); }
+.skill-tag[data-percentage="90"]::before { background: conic-gradient(#FFFFFF 0%, #FFFFFF 90%, #333333 90%); }
+.skill-tag[data-percentage="85"]::before { background: conic-gradient(#FFFFFF 0%, #FFFFFF 85%, #333333 85%); }
+.skill-tag[data-percentage="80"]::before { background: conic-gradient(#FFFFFF 0%, #FFFFFF 80%, #333333 80%); }
+.skill-tag[data-percentage="75"]::before { background: conic-gradient(#FFFFFF 0%, #FFFFFF 75%, #333333 75%); }
+.skill-tag[data-percentage="70"]::before { background: conic-gradient(#FFFFFF 0%, #FFFFFF 70%, #333333 70%); }
 
 /* Text inside skill tag */
 .skill-tag span {
@@ -577,7 +577,7 @@ nav.main-nav a.nav-link.active {
 }
 
 .timeline-dot {
-    background-color: #FFD700; /* Golden */
+    background-color: #FFFFFF; /* White */
     width: 16px; /* Slightly larger dot */
     height: 16px;
     border-radius: 50%;
@@ -587,7 +587,7 @@ nav.main-nav a.nav-link.active {
     top: 35px; /* Adjusted position */
     transform: translateX(-50%);
     z-index: 1;
-    box-shadow: 0 0 0 6px rgba(255,215,0,0.3); /* Larger, more pronounced golden halo */
+    box-shadow: 0 0 0 6px rgba(255,255,255,0.3); /* Larger, more pronounced white halo */
 }
 
 .timeline-content {
@@ -660,7 +660,7 @@ nav.main-nav a.nav-link.active {
 
 #interests-gallery h2 {
     color: white; /* White */
-    border-left-color: #FFD700; /* Golden border (though not used due to text-align: center) */
+    border-left-color: #FFFFFF; /* White border (though not used due to text-align: center) */
     margin-bottom: 35px; /* More margin */
     text-align: center;
     border-left: none;
@@ -671,7 +671,7 @@ nav.main-nav a.nav-link.active {
     display: block;
     width: 100px; /* Wider underline */
     height: 4px; /* Thicker underline */
-    background-color: #FFD700; /* Golden */
+    background-color: #FFFFFF; /* White */
     margin: 18px auto 0 auto; /* More margin */
     border-radius: 2px;
 }
@@ -772,7 +772,7 @@ nav.main-nav a.nav-link.active {
 
 .gallery-item .file-icon {
     font-size: 3.5rem; /* Larger icon */
-    color: #FFD700; /* Golden */
+    color: #FFFFFF; /* White */
     margin-bottom: 12px;
 }
 
@@ -826,7 +826,7 @@ nav.main-nav a.nav-link.active {
 }
 
 .contact-details p i {
-    color: #FFD700; /* Golden */
+    color: #FFFFFF; /* White */
     font-size: 1.5rem; /* Larger icon */
     width: 35px; /* Wider icon area */
     text-align: center;
@@ -834,7 +834,7 @@ nav.main-nav a.nav-link.active {
 }
 
 .contact-details p .contact-link {
-    color: #FFD700; /* Golden */
+    color: #FFFFFF; /* White */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -842,7 +842,7 @@ nav.main-nav a.nav-link.active {
 }
 
 .contact-details p .contact-link:hover {
-    color: #DAA520; /* Darker golden on hover */
+    color: #CCCCCC; /* Darker white on hover */
     text-decoration: underline;
 }
 
@@ -866,7 +866,7 @@ nav.main-nav a.nav-link.active {
 
 .cta-section h2 {
     color: white; /* White */
-    border-left-color: #FFD700; /* Golden border (though not used due to text-align: center) */
+    border-left-color: #FFFFFF; /* White border (though not used due to text-align: center) */
     margin-bottom: 20px; /* More margin */
     font-size: 2.2rem; /* Larger heading */
 }
@@ -884,7 +884,7 @@ nav.main-nav a.nav-link.active {
 .cta-section .cta-button {
     display: inline-flex;
     align-items: center;
-    background-color: #FFD700; /* Golden */
+    background-color: #FFFFFF; /* White */
     color: #000000; /* Black text for contrast */
     padding: 18px 45px; /* Larger padding */
     border-radius: 50px;
@@ -892,13 +892,13 @@ nav.main-nav a.nav-link.active {
     font-weight: 600;
     font-size: 1.3rem; /* Larger font size */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 25px rgba(255,215,0,0.4); /* More pronounced golden shadow */
+    box-shadow: 0 8px 25px rgba(255,255,255,0.4); /* More pronounced white shadow */
 }
 
 .cta-section .cta-button:hover {
-    background-color: #DAA520; /* Darker golden */
+    background-color: #CCCCCC; /* Darker white */
     transform: translateY(-6px); /* More pronounced lift */
-    box-shadow: 0 15px 40px rgba(255,215,0,0.6); /* Even stronger golden shadow on hover */
+    box-shadow: 0 15px 40px rgba(255,255,255,0.6); /* Even stronger white shadow on hover */
 }
 
 /* Horizontal layout for CTA on larger screens */
@@ -1181,7 +1181,6 @@ footer.main-footer {
     .cta-section h2 {
         font-size: 1.8rem;
     }
-
     .cta-section .cta-text {
         font-size: 1.05rem;
     }
